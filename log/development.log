@@ -1,0 +1,2262 @@
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead. (called from /usr/lib/ruby/1.8/activesupport.rb:2)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at Sat Dec 04 22:52:48 +0800 2010
+  Processing by Rails::InfoController#properties as HTML
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Rendered inline template (0.4ms)
+Completed 200 OK in 30ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at Sat Dec 04 23:42:52 +0800 2010
+  Processing by Rails::InfoController#properties as HTML
+Rendered inline template (0.3ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at Sat Dec 04 23:54:27 +0800 2010
+
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
+  
+
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.6ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at Sat Dec 04 23:55:21 +0800 2010
+
+TypeError (can't convert Fixnum into String):
+  
+
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at Sat Dec 04 23:59:26 +0800 2010
+
+Mysql2::Error (Unknown database 'bookshare_development'):
+  
+
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.1ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at Sun Dec 05 00:09:22 +0800 2010
+  Processing by Rails::InfoController#properties as HTML
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+Rendered inline template (0.4ms)
+Completed 200 OK in 46ms (Views: 1.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at Sun Dec 05 00:09:32 +0800 2010
+  Processing by Rails::InfoController#properties as HTML
+Rendered inline template (0.3ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban" for 127.0.0.1 at Sun Dec 05 03:33:57 +0800 2010
+
+ActionController::RoutingError (No route matches "/douban"):
+  
+
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Sun Dec 05 03:34:02 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=7fb1da937858d0a17f158fba690a71e3&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 26ms
+
+
+Started GET "/douban/callback?oauth_token=7fb1da937858d0a17f158fba690a71e3" for 127.0.0.1 at Sun Dec 05 03:34:10 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"7fb1da937858d0a17f158fba690a71e3"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 49ms
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 03:36:56 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Sun Dec 05 03:37:02 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 03:37:03 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Sun Dec 05 03:37:05 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=41ddab202f502b65c59901608df0822f&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 27ms
+
+
+Started GET "/douban/callback?oauth_token=41ddab202f502b65c59901608df0822f" for 127.0.0.1 at Sun Dec 05 03:37:07 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"41ddab202f502b65c59901608df0822f"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 291ms
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 03:37:07 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 03:39:58 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 03:40:02 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Sun Dec 05 03:44:20 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 03:44:21 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Sun Dec 05 03:44:22 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=10b86c0bf5ead7f332294423e1c087d9&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 27ms
+
+
+Started GET "/douban/callback?oauth_token=10b86c0bf5ead7f332294423e1c087d9" for 127.0.0.1 at Sun Dec 05 03:44:24 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"10b86c0bf5ead7f332294423e1c087d9"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 40ms
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 03:44:24 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Sun Dec 05 03:44:51 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 03:44:51 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:07:03 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Sun Dec 05 04:07:05 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=d698ae5c9d94020083ca0b15d8bc0600&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 25ms
+
+
+Started GET "/douban/callback?oauth_token=d698ae5c9d94020083ca0b15d8bc0600" for 127.0.0.1 at Sun Dec 05 04:07:07 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"d698ae5c9d94020083ca0b15d8bc0600"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 80ms
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:07:07 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:07:11 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:07:22 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Sun Dec 05 04:07:37 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=58369685a0edfc4008a3c390e2c9f4c0&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 40ms
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:08:31 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Sun Dec 05 04:08:34 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=4fc147ae0fbee202ef43d70a2f3ca606&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 27ms
+
+
+Started GET "/douban/callback?oauth_token=4fc147ae0fbee202ef43d70a2f3ca606" for 127.0.0.1 at Sun Dec 05 04:08:35 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"4fc147ae0fbee202ef43d70a2f3ca606"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:08:35 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:08:43 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 18ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:09:37 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:09:51 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:11:01 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:11:18 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:11:29 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Sun Dec 05 04:28:44 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 45ms
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:28:45 +0800 2010
+  Processing by HomeController#index as HTML
+Completed   in 0ms
+
+NoMethodError (undefined method `post' for nil:NilClass):
+  app/controllers/home_controller.rb:3:in `index'
+
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.9ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:29:17 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Sun Dec 05 04:29:21 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=d9b22acdebd0eb168d168069c372c142&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 27ms
+
+
+Started GET "/douban/callback?oauth_token=d9b22acdebd0eb168d168069c372c142" for 127.0.0.1 at Sun Dec 05 04:29:23 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"d9b22acdebd0eb168d168069c372c142"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 32ms
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:29:23 +0800 2010
+  Processing by HomeController#index as HTML
+Completed   in 1ms
+
+ArgumentError (wrong number of arguments (3 for 2)):
+  app/controllers/home_controller.rb:5:in `post'
+  app/controllers/home_controller.rb:5:in `index'
+
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.2ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:36:30 +0800 2010
+  Processing by HomeController#index as HTML
+Completed   in 1ms
+
+ArgumentError (wrong number of arguments (4 for 3)):
+  app/controllers/home_controller.rb:5:in `request'
+  app/controllers/home_controller.rb:5:in `index'
+
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.8ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.1ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:38:28 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 5352ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Dec 05 04:39:02 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 82ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 21:49:29 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Fri Dec 10 21:49:33 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback&oauth_token=2096bce3118e9ed961c436a934abdc8b
+Completed 302 Found in 277ms
+
+
+Started GET "/douban/callback?oauth_token=2096bce3118e9ed961c436a934abdc8b" for 127.0.0.1 at Fri Dec 10 21:49:43 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"2096bce3118e9ed961c436a934abdc8b"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 36ms
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 21:49:43 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 129ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 21:49:53 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 2228ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 21:49:56 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 2047ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 21:49:58 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 1423ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 21:49:59 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 2052ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 21:50:01 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1713ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:09:11 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 2155ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:09:43 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1574ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:20:24 +0800 2010
+  Processing by HomeController#index as HTML
+Completed   in 1ms
+
+NoMethodError (undefined method `miniblog' for #<Douban:0xb6b0fc50>):
+  app/controllers/home_controller.rb:5:in `index'
+
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.8ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:20:37 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 70ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:24:33 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 98ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Fri Dec 10 22:24:45 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 121ms
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:24:45 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Fri Dec 10 22:24:47 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback&oauth_token=a14e3d18645609ece3eab7492d021dc4
+Completed 302 Found in 62ms
+
+
+Started GET "/douban/callback?oauth_token=a14e3d18645609ece3eab7492d021dc4" for 127.0.0.1 at Fri Dec 10 22:24:50 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"a14e3d18645609ece3eab7492d021dc4"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 117ms
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:24:50 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 520ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:24:57 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 72ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:24:57 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 83ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:24:58 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 130ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:24:58 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 514ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:24:58 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 71ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:24:59 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 535ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:24:59 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 103ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:24:59 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 85ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:24:59 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 539ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:25:00 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 701ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:45:19 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Fri Dec 10 22:45:24 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=3751f54a640b0dfda5f5dfdf2c2129f7&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 563ms
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 22:45:42 +0800 2010
+
+ActionController::RoutingError (No route matches "/book/search"):
+  
+
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 22:49:57 +0800 2010
+  Processing by BookController#search as HTML
+Completed   in 2ms
+
+NameError (undefined local variable or method `douban_auth_path' for #<BookController:0xb6dfcb48>):
+  app/helpers/douban_helper.rb:11:in `douban_auth_required'
+
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:52:15 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Fri Dec 10 22:52:24 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=4d592130b8198a92e80b6392284c9fb6&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 34ms
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 22:52:52 +0800 2010
+  Processing by BookController#search as HTML
+Completed   in 2ms
+
+NameError (undefined local variable or method `douban_new_path' for #<BookController:0xb6d4ee44>):
+  app/helpers/douban_helper.rb:11:in `douban_auth_required'
+
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.6ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 22:53:39 +0800 2010
+  Processing by BookController#search as HTML
+Redirected to http://localhost:3000/douban/new
+Completed 302 Found in 1ms
+
+
+Started GET "/douban/new" for 127.0.0.1 at Fri Dec 10 22:53:39 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=02ec6c39ab25f44c08c544ad0171dce4&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 1993ms
+
+
+Started GET "/douban/callback?oauth_token=02ec6c39ab25f44c08c544ad0171dce4" for 127.0.0.1 at Fri Dec 10 22:54:18 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"02ec6c39ab25f44c08c544ad0171dce4"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2271ms
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 22:54:20 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 974ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 22:55:28 +0800 2010
+  Processing by BookController#search as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 22:55:47 +0800 2010
+  Processing by BookController#search as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 22:56:12 +0800 2010
+  Processing by BookController#search as HTML
+Completed   in 1ms
+
+NoMethodError (undefined method `json' for #<Hash:0xb6f45eb4>):
+  app/controllers/book_controller.rb:5:in `search'
+
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.6ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 22:56:23 +0800 2010
+  Processing by BookController#search as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:00:25 +0800 2010
+  Processing by BookController#search as HTML
+Completed   in 1ms
+
+NoMethodError (undefined method `search_books' for #<Douban:0xb6dfe6b4>):
+  app/controllers/book_controller.rb:5:in `search'
+
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.3ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:00:37 +0800 2010
+  Processing by BookController#search as HTML
+Completed 200 OK in 3173ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:01:34 +0800 2010
+  Processing by BookController#search as HTML
+Completed 200 OK in 112ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:04:02 +0800 2010
+  Processing by BookController#search as HTML
+Completed 200 OK in 245ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:04:26 +0800 2010
+  Processing by BookController#search as HTML
+Completed 200 OK in 75ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:04:41 +0800 2010
+  Processing by BookController#search as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 81ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:04:45 +0800 2010
+  Processing by BookController#search as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 111ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:05:23 +0800 2010
+  Processing by BookController#search as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 120ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:06:23 +0800 2010
+  Processing by BookController#search as HTML
+Redirected to http://localhost:3000/douban/new
+Completed 302 Found in 1ms
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:06:23 +0800 2010
+  Processing by BookController#search as HTML
+Redirected to http://localhost:3000/douban/new
+Completed 302 Found in 1ms
+
+
+Started GET "/douban/new" for 127.0.0.1 at Fri Dec 10 23:06:23 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=e95f0f1f0e616eabbc1d2d5d2b244c01&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 48ms
+
+
+Started GET "/douban/callback?oauth_token=e95f0f1f0e616eabbc1d2d5d2b244c01" for 127.0.0.1 at Fri Dec 10 23:06:43 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"e95f0f1f0e616eabbc1d2d5d2b244c01"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 65ms
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 10 23:06:43 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 586ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:06:50 +0800 2010
+  Processing by BookController#search as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 103ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:07:10 +0800 2010
+  Processing by BookController#search as HTML
+Completed 200 OK in 148ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:07:37 +0800 2010
+  Processing by BookController#search as HTML
+Completed 200 OK in 58ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:09:20 +0800 2010
+  Processing by BookController#search as HTML
+Completed 200 OK in 54ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:09:29 +0800 2010
+  Processing by BookController#search as HTML
+Completed 200 OK in 188ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:15:05 +0800 2010
+  Processing by BookController#search as HTML
+Completed 200 OK in 92ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:24:22 +0800 2010
+  Processing by BookController#search as HTML
+Rendered book/search.html.erb within layouts/application (17.8ms)
+Completed   in 30ms
+
+ActionView::Template::Error (undefined method `botton_tag' for #<#<Class:0xb6de90c0>:0xb6de8300>):
+    29: <% end %>
+    30: <% form_tag "search", :action => book_search_path do %>
+    31:   <%= text_field_tag :q %>
+    32:   <%= botton_tag "搜索" %>
+    33: <% end %>
+  app/views/book/search.html.erb:32:in `_app_views_book_search_html_erb___615930677__613467368_0'
+  app/views/book/search.html.erb:30:in `_app_views_book_search_html_erb___615930677__613467368_0'
+
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.9ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.9ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:25:09 +0800 2010
+  Processing by BookController#search as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_book_search_html_erb___615930677__612347728_0 at /home/zhu/bookshare/app/views/book/search.html.erb:30)
+Rendered book/search.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:26:04 +0800 2010
+  Processing by BookController#search as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_book_search_html_erb___615930677__612694818_0 at /home/zhu/bookshare/app/views/book/search.html.erb:30)
+Rendered book/search.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:26:26 +0800 2010
+  Processing by BookController#search as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_book_search_html_erb___615930677__612295878_0 at /home/zhu/bookshare/app/views/book/search.html.erb:30)
+Rendered book/search.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:26:45 +0800 2010
+  Processing by BookController#search as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_book_search_html_erb___615930677__612069048_0 at /home/zhu/bookshare/app/views/book/search.html.erb:30)
+Rendered book/search.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:26:48 +0800 2010
+  Processing by BookController#search as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_book_search_html_erb___615930677__612431158_0 at /home/zhu/bookshare/app/views/book/search.html.erb:30)
+Rendered book/search.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Fri Dec 10 23:37:34 +0800 2010
+  Processing by BookController#search as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_book_search_html_erb___615930677__612256698_0 at /home/zhu/bookshare/app/views/book/search.html.erb:30)
+Rendered book/search.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Sat Dec 11 00:04:28 +0800 2010
+  Processing by BookController#search as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_book_search_html_erb___615930677__612609438_0 at /home/zhu/bookshare/app/views/book/search.html.erb:30)
+Rendered book/search.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Sat Dec 11 00:08:36 +0800 2010
+  Processing by BookController#search as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_book_search_html_erb___615930677__612282608_0 at /home/zhu/bookshare/app/views/book/search.html.erb:30)
+Rendered book/search.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Sat Dec 11 00:11:25 +0800 2010
+  Processing by BookController#search as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search?q=http" for 127.0.0.1 at Sat Dec 11 00:11:44 +0800 2010
+  Processing by BookController#search as HTML
+  Parameters: {"q"=>"http"}
+Completed   in 1ms
+
+NoMethodError (private method `gsub' called for false:FalseClass):
+  config/initializers/douban_patch.rb:28:in `search_books'
+  app/controllers/book_controller.rb:8:in `search'
+
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.1ms)
+Rendered /var/lib/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started GET "/book/search?q=http" for 127.0.0.1 at Sat Dec 11 00:13:59 +0800 2010
+  Processing by BookController#search as HTML
+  Parameters: {"q"=>"http"}
+Completed 200 OK in 106ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search?q=http" for 127.0.0.1 at Sat Dec 11 00:15:45 +0800 2010
+  Processing by BookController#search as HTML
+  Parameters: {"q"=>"http"}
+Completed 200 OK in 81ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Sat Dec 11 00:15:49 +0800 2010
+  Processing by BookController#search as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_book_search_html_erb___615930677__613045278_0 at /home/zhu/bookshare/app/views/book/search.html.erb:30)
+Rendered book/search.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search?utf8=%E2%9C%93&q=httm&commit=%E6%90%9C%E7%B4%A2" for 127.0.0.1 at Sat Dec 11 00:16:05 +0800 2010
+  Processing by BookController#search as HTML
+  Parameters: {"commit"=>"搜索", "utf8"=>"✓", "q"=>"httm"}
+Completed 200 OK in 46ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search?utf8=%E2%9C%93&q=http&commit=%E6%90%9C%E7%B4%A2" for 127.0.0.1 at Sat Dec 11 00:16:19 +0800 2010
+  Processing by BookController#search as HTML
+  Parameters: {"commit"=>"搜索", "utf8"=>"✓", "q"=>"http"}
+Completed 200 OK in 90ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search?utf8=%E2%9C%93&q=http&commit=%E6%90%9C%E7%B4%A2" for 127.0.0.1 at Sat Dec 11 00:35:11 +0800 2010
+  Processing by BookController#search as HTML
+  Parameters: {"commit"=>"搜索", "utf8"=>"✓", "q"=>"http"}
+Completed 200 OK in 342ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search" for 127.0.0.1 at Sat Dec 11 00:51:37 +0800 2010
+  Processing by BookController#search as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_book_search_html_erb___615930677__612927278_0 at /home/zhu/bookshare/app/views/book/search.html.erb:30)
+Rendered book/search.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search?utf8=%E2%9C%93&q=http&commit=%E6%90%9C%E7%B4%A2" for 127.0.0.1 at Sat Dec 11 00:51:50 +0800 2010
+  Processing by BookController#search as HTML
+  Parameters: {"commit"=>"搜索", "utf8"=>"✓", "q"=>"http"}
+Completed 200 OK in 206ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/search?utf8=%E2%9C%93&q=http&commit=%E6%90%9C%E7%B4%A2" for 127.0.0.1 at Sat Dec 11 00:51:59 +0800 2010
+  Processing by BookController#search as HTML
+  Parameters: {"commit"=>"搜索", "utf8"=>"✓", "q"=>"http"}
+Completed 200 OK in 138ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (36.1ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (30.3ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (0.8ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (2.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+  [1m[36mSQL (0.1ms)[0m  [1mSHOW TABLES[0m
+  [1m[36mSQL (6.1ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (3.7ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateSignatures (20101221160822)
+  [1m[35mSQL (68.3ms)[0m  CREATE TABLE `signatures` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `body` text, `rank` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20101221160822')[0m
+  [1m[35mSQL (1.1ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.4ms)[0m  [1mdescribe `signatures`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW KEYS FROM `signatures`
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 00:14:19 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signatures" for 127.0.0.1 at Wed Dec 22 00:14:32 +0800 2010
+  Processing by SignaturesController#index as HTML
+  [1m[36mSignature Load (480.5ms)[0m  [1mSELECT `signatures`.* FROM `signatures`[0m
+Rendered signatures/index.html.erb within layouts/application (7145.0ms)
+Completed 200 OK in 7848ms (Views: 7147.7ms | ActiveRecord: 480.5ms)
+
+
+Started GET "/signatures/1" for 127.0.0.1 at Wed Dec 22 00:15:28 +0800 2010
+  Processing by SignaturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSQL (440.0ms)[0m  SHOW TABLES
+  [1m[36mSignature Load (46.8ms)[0m  [1mSELECT `signatures`.* FROM `signatures` WHERE (`signatures`.`id` = 1) LIMIT 1[0m
+Rendered signatures/show.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 515ms (Views: 21.1ms | ActiveRecord: 486.8ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 00:15:33 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_callback=http%3A%2F%2Flocalhost%3A8080%2Fdouban%2Fcallback&oauth_token=545da280e53e7f10fd18e782afbb7d30
+Completed 302 Found in 105ms
+
+
+Started GET "/douban/callback?oauth_token=545da280e53e7f10fd18e782afbb7d30" for 127.0.0.1 at Wed Dec 22 00:15:36 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"545da280e53e7f10fd18e782afbb7d30"}
+Redirected to http://localhost:8080/signatures
+Completed 302 Found in 171ms
+
+
+Started GET "/signatures" for 127.0.0.1 at Wed Dec 22 00:15:36 +0800 2010
+  Processing by SignaturesController#index as HTML
+  [1m[35mSignature Load (8.8ms)[0m  SELECT `signatures`.* FROM `signatures`
+Rendered signatures/index.html.erb within layouts/application (6906.0ms)
+Completed 200 OK in 6999ms (Views: 6911.0ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 21:58:31 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 22:17:41 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 22:18:02 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 22:18:03 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 22:18:08 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=40f8205eed4598c2c2e8611cc7d0ca46&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 15175ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 22:18:34 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 22:20:17 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 22:58:13 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 22:58:26 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:00:15 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=bac6ed0b2f1e21733054c7218d5a6459&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 4733ms
+
+
+Started GET "/douban/callback?oauth_token=bac6ed0b2f1e21733054c7218d5a6459" for 127.0.0.1 at Wed Dec 22 23:00:22 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"bac6ed0b2f1e21733054c7218d5a6459"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 442ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:00:22 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 220ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:00:26 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 102ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Wed Dec 22 23:00:35 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 35ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:00:35 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:00:40 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=bfb3da32450d1c4a3f1b8e96cf2754de&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 44ms
+
+
+Started GET "/douban/callback?oauth_token=bfb3da32450d1c4a3f1b8e96cf2754de" for 127.0.0.1 at Wed Dec 22 23:00:42 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"bfb3da32450d1c4a3f1b8e96cf2754de"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 126ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:00:42 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 112ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:01:12 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:01:38 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:01:58 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:02:04 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:03:55 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:03:57 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=f83f33c27dd78b61e8bd9b477986a223&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 341ms
+
+
+Started GET "/douban/callback?oauth_token=f83f33c27dd78b61e8bd9b477986a223" for 127.0.0.1 at Wed Dec 22 23:04:01 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"f83f33c27dd78b61e8bd9b477986a223"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3658ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:04:04 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 2803ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:07:32 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:09:11 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:09:24 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:09:35 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:10:06 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:10:28 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:10:57 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:11:22 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:11:31 +0800 2010
+  Processing by HomeController#index as HTML
+ooo
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Wed Dec 22 23:12:09 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 73ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:12:09 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:12:16 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=24c4ec21572e61c36e4ec464058b2549&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 220ms
+
+
+Started GET "/douban/callback?oauth_token=24c4ec21572e61c36e4ec464058b2549" for 127.0.0.1 at Wed Dec 22 23:12:31 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"24c4ec21572e61c36e4ec464058b2549"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 128ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:12:31 +0800 2010
+  Processing by HomeController#index as HTML
+ooo
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:19:35 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=fb42fe6f841b1d7df1c8fb4e8c515877&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 9282ms
+
+
+Started GET "/douban/callback?oauth_token=fb42fe6f841b1d7df1c8fb4e8c515877" for 127.0.0.1 at Wed Dec 22 23:19:48 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"fb42fe6f841b1d7df1c8fb4e8c515877"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1465ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:19:49 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:20:06 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 67ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:20:08 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=40e4528354d7df15c2acf789fe879d3f&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 53ms
+
+
+Started GET "/douban/callback?oauth_token=40e4528354d7df15c2acf789fe879d3f" for 127.0.0.1 at Wed Dec 22 23:20:10 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"40e4528354d7df15c2acf789fe879d3f"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 34ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:20:10 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Wed Dec 22 23:20:17 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 53ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:20:17 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:20:18 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=8ed50f525d5c7e24ac7f2df718157a6c&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 75ms
+
+
+Started GET "/douban/callback?oauth_token=8ed50f525d5c7e24ac7f2df718157a6c" for 127.0.0.1 at Wed Dec 22 23:20:20 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"8ed50f525d5c7e24ac7f2df718157a6c"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 40ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:20:20 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:20:28 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:21:25 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:21:41 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:21:50 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=5c0fbc6ba376d235142f3542ea64769f&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 41ms
+
+
+Started GET "/douban/callback?oauth_token=5c0fbc6ba376d235142f3542ea64769f" for 127.0.0.1 at Wed Dec 22 23:21:58 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"5c0fbc6ba376d235142f3542ea64769f"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:21:58 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:25:25 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:27:44 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:27:53 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=9da9b61ae0e88f17d8fd2250a2b9ad45&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 51ms
+
+
+Started GET "/douban/callback?oauth_token=9da9b61ae0e88f17d8fd2250a2b9ad45" for 127.0.0.1 at Wed Dec 22 23:27:54 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"9da9b61ae0e88f17d8fd2250a2b9ad45"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 58ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:27:54 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:28:44 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:29:20 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:29:44 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:30:30 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=d846cf5c19ce20e188d46e144d6a62a3&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 3808ms
+
+
+Started GET "/douban/callback?oauth_token=d846cf5c19ce20e188d46e144d6a62a3" for 127.0.0.1 at Wed Dec 22 23:30:38 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"d846cf5c19ce20e188d46e144d6a62a3"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3764ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:30:42 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:31:06 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:31:42 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:32:05 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:32:17 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=0a37f3030026be741ea7d90900743b5c&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 34ms
+
+
+Started GET "/douban/callback?oauth_token=0a37f3030026be741ea7d90900743b5c" for 127.0.0.1 at Wed Dec 22 23:32:18 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"0a37f3030026be741ea7d90900743b5c"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:32:18 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:33:10 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Wed Dec 22 23:33:18 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 80ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:33:18 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:33:19 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=726198d2762671f05724ca77627355d0&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 33ms
+
+
+Started GET "/douban/callback?oauth_token=726198d2762671f05724ca77627355d0" for 127.0.0.1 at Wed Dec 22 23:33:20 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"726198d2762671f05724ca77627355d0"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 64ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:33:20 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:33:33 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:42:30 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:42:51 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=0faf02d57a25e3b62f0d08806e71ab22&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 46ms
+
+
+Started GET "/douban/callback?oauth_token=0faf02d57a25e3b62f0d08806e71ab22" for 127.0.0.1 at Wed Dec 22 23:42:52 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"0faf02d57a25e3b62f0d08806e71ab22"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:42:52 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:43:51 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Wed Dec 22 23:43:53 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 47ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:43:53 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:43:54 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=1743b4bb99fcf35045cb1e32cdf6d9f0&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 37ms
+
+
+Started GET "/douban/callback?oauth_token=1743b4bb99fcf35045cb1e32cdf6d9f0" for 127.0.0.1 at Wed Dec 22 23:43:56 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"1743b4bb99fcf35045cb1e32cdf6d9f0"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 84ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:43:56 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 95ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:44:39 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:44:48 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:45:25 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=a16cd67defccad97e4468379cf6608c5&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 54ms
+
+
+Started GET "/douban/callback?oauth_token=a16cd67defccad97e4468379cf6608c5" for 127.0.0.1 at Wed Dec 22 23:45:26 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"a16cd67defccad97e4468379cf6608c5"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 54ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:45:27 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:45:34 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Wed Dec 22 23:53:57 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 59ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:53:58 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Wed Dec 22 23:54:00 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=2331fc12262b8c7a6995f4367282a56e&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 896ms
+
+
+Started GET "/douban/callback?oauth_token=2331fc12262b8c7a6995f4367282a56e" for 127.0.0.1 at Wed Dec 22 23:54:03 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"2331fc12262b8c7a6995f4367282a56e"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 44ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:54:03 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:54:14 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:54:43 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Dec 22 23:54:50 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 00:02:30 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=684a3961efc21d2c38deac25cf465784&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 51ms
+
+
+Started GET "/douban/callback?oauth_token=684a3961efc21d2c38deac25cf465784" for 127.0.0.1 at Thu Dec 23 00:02:33 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"684a3961efc21d2c38deac25cf465784"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 47ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:02:33 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:02:52 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:03:12 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:03:59 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 00:04:01 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=1b4c7ae9b2cd0fb551e570bd18672f1f&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 97ms
+
+
+Started GET "/douban/callback?oauth_token=1b4c7ae9b2cd0fb551e570bd18672f1f" for 127.0.0.1 at Thu Dec 23 00:04:03 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"1b4c7ae9b2cd0fb551e570bd18672f1f"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 52ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:04:03 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Thu Dec 23 00:04:20 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 34ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:04:20 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 00:04:21 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=7926bb878739cbdd6b74329695ad6397&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 32ms
+
+
+Started GET "/douban/callback?oauth_token=7926bb878739cbdd6b74329695ad6397" for 127.0.0.1 at Thu Dec 23 00:04:23 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"7926bb878739cbdd6b74329695ad6397"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 43ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:04:23 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:04:28 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:05:10 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Thu Dec 23 00:05:11 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 46ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:05:11 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 00:05:13 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=93b90f6e73db78f9bb2b2e4b5b926aeb&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 237ms
+
+
+Started GET "/douban/callback?oauth_token=93b90f6e73db78f9bb2b2e4b5b926aeb" for 127.0.0.1 at Thu Dec 23 00:05:15 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"93b90f6e73db78f9bb2b2e4b5b926aeb"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 66ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:05:15 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Thu Dec 23 00:11:37 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 57ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:11:37 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 00:11:39 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=0de232398e14c82c29a696acaa3e5884&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 31ms
+
+
+Started GET "/douban/callback?oauth_token=0de232398e14c82c29a696acaa3e5884" for 127.0.0.1 at Thu Dec 23 00:11:40 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"0de232398e14c82c29a696acaa3e5884"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 57ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:11:40 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:12:19 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 00:12:57 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=3bcf9f3833267ba4b36edda8997372ec&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 133ms
+
+
+Started GET "/douban/callback?oauth_token=3bcf9f3833267ba4b36edda8997372ec" for 127.0.0.1 at Thu Dec 23 00:12:59 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"3bcf9f3833267ba4b36edda8997372ec"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:13:00 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Thu Dec 23 00:13:11 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 52ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:13:11 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 00:13:12 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=819fb46b5e551a4e84df1d421aff4eea&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 38ms
+
+
+Started GET "/douban/callback?oauth_token=819fb46b5e551a4e84df1d421aff4eea" for 127.0.0.1 at Thu Dec 23 00:13:14 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"819fb46b5e551a4e84df1d421aff4eea"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3077ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:13:17 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:17:30 +0800 2010
+  Processing by HomeController#index as HTML
+Completed   in 76ms
+
+LoadError (no such file to load -- json):
+  app/controllers/home_controller.rb:5:in `index'
+
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.1ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:17:58 +0800 2010
+  Processing by HomeController#index as HTML
+Completed   in 1ms
+
+TypeError (can't convert nil into String):
+  app/controllers/home_controller.rb:6:in `index'
+
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:18:40 +0800 2010
+  Processing by HomeController#index as HTML
+Completed   in 1ms
+
+TypeError (can't convert nil into String):
+  app/controllers/home_controller.rb:6:in `index'
+
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:18:42 +0800 2010
+  Processing by HomeController#index as HTML
+Completed   in 1ms
+
+TypeError (can't convert nil into String):
+  app/controllers/home_controller.rb:6:in `index'
+
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:19:17 +0800 2010
+  Processing by HomeController#index as HTML
+Completed   in 1ms
+
+JSON::ParserError (A JSON text must at least contain two octets!):
+  app/controllers/home_controller.rb:6:in `index'
+
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:19:57 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 447ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Thu Dec 23 00:19:59 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 521ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:20:00 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 00:20:01 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=c620cdcd267caa52526269677375fef6&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 35ms
+
+
+Started GET "/douban/callback?oauth_token=c620cdcd267caa52526269677375fef6" for 127.0.0.1 at Thu Dec 23 00:20:03 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"c620cdcd267caa52526269677375fef6"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1217ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:20:04 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Thu Dec 23 00:31:29 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 95ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:31:30 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 00:31:31 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=f7341ffff5eee760e59c5fffe1ccb620&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 31ms
+
+
+Started GET "/douban/callback?oauth_token=f7341ffff5eee760e59c5fffe1ccb620" for 127.0.0.1 at Thu Dec 23 00:31:33 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"f7341ffff5eee760e59c5fffe1ccb620"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 62ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:31:33 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:31:35 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:31:54 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:31:59 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 00:32:04 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=e85860589a2d87b0b9092109ce889710&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 32ms
+
+
+Started GET "/douban/callback?oauth_token=e85860589a2d87b0b9092109ce889710" for 127.0.0.1 at Thu Dec 23 00:32:05 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"e85860589a2d87b0b9092109ce889710"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 31ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:32:06 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:35:28 +0800 2010
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/douban/new
+Completed 302 Found in 1ms
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 00:35:28 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=4d48b3bac44361f1e7da1b304cca25d3&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 34ms
+
+
+Started GET "/douban/callback?oauth_token=4d48b3bac44361f1e7da1b304cca25d3" for 127.0.0.1 at Thu Dec 23 00:35:31 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"4d48b3bac44361f1e7da1b304cca25d3"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:35:31 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:35:47 +0800 2010
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/douban/new
+Completed 302 Found in 1ms
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 00:35:47 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=0e5664bb080b645f2b032e3118222d1d&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 109ms
+
+
+Started GET "/douban/callback?oauth_token=0e5664bb080b645f2b032e3118222d1d" for 127.0.0.1 at Thu Dec 23 00:35:51 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"0e5664bb080b645f2b032e3118222d1d"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 36ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:35:51 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:35:55 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:35:55 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:37:35 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:38:03 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:38:19 +0800 2010
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/douban/new
+Completed 302 Found in 2ms
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 00:38:19 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=a20448ca1916ae1ee60cda5e4b440a5a&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 57ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:40:16 +0800 2010
+  Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/douban/new
+Completed 302 Found in 16ms
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 00:40:16 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=56c49609af2ba5f7044dc21d0d82f1e5&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 65ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:41:14 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:42:59 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:43:12 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:43:44 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 448ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:44:21 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:47:00 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:47:25 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:47:41 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:49:39 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 1072ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Thu Dec 23 00:49:49 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 51ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:49:49 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 42ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:49:54 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 44ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:50:39 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 69ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Thu Dec 23 00:50:41 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:50:41 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:50:44 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 00:50:47 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_token=ba828e579155d05c2f87ab06b4017114&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback
+Completed 302 Found in 30ms
+
+
+Started GET "/douban/callback?oauth_token=ba828e579155d05c2f87ab06b4017114" for 127.0.0.1 at Thu Dec 23 00:50:49 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"ba828e579155d05c2f87ab06b4017114"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 61ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:50:49 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:50:51 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 00:51:02 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 62ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 01:28:35 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 01:28:41 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_callback=http%3A%2F%2Flocalhost%3A8080%2Fdouban%2Fcallback&oauth_token=99df516181261f57cd9df42483725e05
+Completed 302 Found in 57ms
+
+
+Started GET "/douban/callback?oauth_token=99df516181261f57cd9df42483725e05" for 127.0.0.1 at Thu Dec 23 01:28:43 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"99df516181261f57cd9df42483725e05"}
+Redirected to http://localhost:8080/
+Completed 302 Found in 87ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 01:28:43 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 01:28:45 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
