@@ -2266,3 +2266,46 @@ Started GET "/" for 127.0.0.1 at Thu Dec 23 01:50:41 +0800 2010
   Processing by HomeController#index as HTML
 Rendered home/index.html.erb within layouts/application (2.6ms)
 Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 21:25:55 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (96.2ms)
+Completed 200 OK in 104ms (Views: 103.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/logout" for 127.0.0.1 at Thu Dec 23 21:26:00 +0800 2010
+  Processing by DoubanController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 53ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 21:26:00 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/douban/new" for 127.0.0.1 at Thu Dec 23 21:26:01 +0800 2010
+  Processing by DoubanController#new as HTML
+Redirected to http://www.douban.com/service/auth/authorize?oauth_callback=http%3A%2F%2Flocalhost%3A3000%2Fdouban%2Fcallback&oauth_token=3dfc93859f5a1992b9f5ba90de0e4cb6
+Completed 302 Found in 32ms
+
+
+Started GET "/douban/callback?oauth_token=3dfc93859f5a1992b9f5ba90de0e4cb6" for 127.0.0.1 at Thu Dec 23 21:26:05 +0800 2010
+  Processing by DoubanController#callback as HTML
+  Parameters: {"oauth_token"=>"3dfc93859f5a1992b9f5ba90de0e4cb6"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 60ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 21:26:05 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 21:27:46 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (102.1ms)
+Completed 200 OK in 106ms (Views: 105.2ms | ActiveRecord: 0.0ms)

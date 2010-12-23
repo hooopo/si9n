@@ -8,7 +8,8 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module Bookshare
   class Application < Rails::Application
-    ActionController::Base.cookie_verifier_secret = "i have a dream that is not a dream"
+    config.secret_token= "11111111111111"
+    #ActionController::Base.cookie_verifier_secret = "i have a dream that is not a dream"
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
