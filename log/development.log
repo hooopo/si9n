@@ -2421,3 +2421,753 @@ Migrating to AddUpDownUserIdInSignatures (20101223135154)
   [1m[35mSignature Load (0.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY signatures.id DESC LIMIT 1
   [1m[36mSignature Load (0.3ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY signatures.id DESC LIMIT 1[0m
   [1m[35mSignature Load (0.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY signatures.id DESC LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:12 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (149.5ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (252.4ms)
+Completed 200 OK in 274ms (Views: 124.0ms | ActiveRecord: 149.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:15 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (20.7ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (65.1ms)
+Completed 200 OK in 70ms (Views: 49.2ms | ActiveRecord: 20.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:15 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (30.1ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (79.3ms)
+Completed 200 OK in 83ms (Views: 52.2ms | ActiveRecord: 30.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:16 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (21.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (67.9ms)
+Completed 200 OK in 71ms (Views: 49.0ms | ActiveRecord: 21.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:17 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.4ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (68.4ms)
+Completed 200 OK in 71ms (Views: 48.6ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:17 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (21.3ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (148.7ms)
+Completed 200 OK in 152ms (Views: 130.1ms | ActiveRecord: 21.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:18 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (24.7ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (65.3ms)
+Completed 200 OK in 68ms (Views: 43.2ms | ActiveRecord: 24.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:19 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (23.1ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (86.4ms)
+Completed 200 OK in 89ms (Views: 65.7ms | ActiveRecord: 23.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:20 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.8ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (68.3ms)
+Completed 200 OK in 71ms (Views: 48.1ms | ActiveRecord: 22.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:21 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (29.4ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (75.8ms)
+Completed 200 OK in 79ms (Views: 49.0ms | ActiveRecord: 29.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:22 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (21.7ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (72.9ms)
+Completed 200 OK in 76ms (Views: 53.9ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:22 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (22.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (148.4ms)
+Completed 200 OK in 151ms (Views: 128.4ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:23 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (30.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (75.6ms)
+Completed 200 OK in 79ms (Views: 48.0ms | ActiveRecord: 30.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:24 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (22.7ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (70.3ms)
+Completed 200 OK in 73ms (Views: 50.2ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:25 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.5ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 73ms (Views: 50.2ms | ActiveRecord: 22.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:25 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (26.1ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (74.2ms)
+Completed 200 OK in 77ms (Views: 50.7ms | ActiveRecord: 26.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:29 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (18.8ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (86.3ms)
+Completed 200 OK in 89ms (Views: 70.1ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:30 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (15.7ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (116.7ms)
+Completed 200 OK in 120ms (Views: 103.7ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:31 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (20.9ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (85.2ms)
+Completed 200 OK in 88ms (Views: 67.0ms | ActiveRecord: 20.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:32 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (15.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (67.7ms)
+Completed 200 OK in 72ms (Views: 55.8ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:33 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (29.5ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (84.1ms)
+Completed 200 OK in 87ms (Views: 57.3ms | ActiveRecord: 29.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:34 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (24.9ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (70.1ms)
+Completed 200 OK in 73ms (Views: 47.9ms | ActiveRecord: 24.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:34 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (21.1ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (85.5ms)
+Completed 200 OK in 89ms (Views: 67.2ms | ActiveRecord: 21.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:35 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (23.0ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (150.9ms)
+Completed 200 OK in 154ms (Views: 130.3ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:36 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.6ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (70.3ms)
+Completed 200 OK in 73ms (Views: 50.5ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:36 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (21.9ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (69.9ms)
+Completed 200 OK in 73ms (Views: 50.7ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:37 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (21.9ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (67.3ms)
+Completed 200 OK in 70ms (Views: 48.1ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:37 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (21.9ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (156.6ms)
+Completed 200 OK in 160ms (Views: 137.3ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:37 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.9ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (75.0ms)
+Completed 200 OK in 78ms (Views: 54.7ms | ActiveRecord: 22.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:38 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (22.3ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (72.4ms)
+Completed 200 OK in 75ms (Views: 52.7ms | ActiveRecord: 22.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:38 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (16.6ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (55.5ms)
+Completed 200 OK in 59ms (Views: 42.1ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:38 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (16.0ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 65ms (Views: 48.9ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:39 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.6ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (68.4ms)
+Completed 200 OK in 71ms (Views: 48.5ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:39 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (16.2ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (71.6ms)
+Completed 200 OK in 75ms (Views: 58.2ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:39 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (20.0ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (69.1ms)
+Completed 200 OK in 72ms (Views: 51.8ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:39 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (22.7ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (66.6ms)
+Completed 200 OK in 70ms (Views: 46.5ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:40 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (15.8ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 58ms (Views: 41.7ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:40 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (22.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (69.5ms)
+Completed 200 OK in 73ms (Views: 49.6ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:40 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.4ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (69.1ms)
+Completed 200 OK in 72ms (Views: 49.4ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:41 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (21.8ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (68.1ms)
+Completed 200 OK in 71ms (Views: 48.9ms | ActiveRecord: 21.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:41 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.0ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (69.6ms)
+Completed 200 OK in 73ms (Views: 50.3ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:42 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (15.8ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (60.8ms)
+Completed 200 OK in 64ms (Views: 48.0ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:42 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (15.7ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (64.7ms)
+Completed 200 OK in 69ms (Views: 53.0ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:42 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (22.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (71.5ms)
+Completed 200 OK in 75ms (Views: 51.5ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:42 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (16.1ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (73.3ms)
+Completed 200 OK in 76ms (Views: 59.9ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:42 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (16.9ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (65.6ms)
+Completed 200 OK in 69ms (Views: 51.4ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:43 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (23.9ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (74.1ms)
+Completed 200 OK in 77ms (Views: 52.9ms | ActiveRecord: 23.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:44 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (22.3ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (104.0ms)
+Completed 200 OK in 107ms (Views: 84.3ms | ActiveRecord: 22.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:44 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.5ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (134.2ms)
+Completed 200 OK in 137ms (Views: 114.4ms | ActiveRecord: 22.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:44 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (16.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (56.5ms)
+Completed 200 OK in 60ms (Views: 42.9ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:44 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.4ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (69.1ms)
+Completed 200 OK in 72ms (Views: 49.2ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:45 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (16.0ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (72.7ms)
+Completed 200 OK in 76ms (Views: 59.6ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:45 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (15.7ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (64.2ms)
+Completed 200 OK in 67ms (Views: 51.3ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:45 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (22.0ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (93.1ms)
+Completed 200 OK in 96ms (Views: 73.7ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:45 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.4ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (67.6ms)
+Completed 200 OK in 71ms (Views: 47.9ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:46 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (22.1ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (71.2ms)
+Completed 200 OK in 74ms (Views: 51.7ms | ActiveRecord: 22.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:46 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.0ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (78.9ms)
+Completed 200 OK in 82ms (Views: 59.6ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:47 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (29.9ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (98.6ms)
+Completed 200 OK in 102ms (Views: 71.3ms | ActiveRecord: 29.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:47 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (20.2ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (66.1ms)
+Completed 200 OK in 69ms (Views: 48.7ms | ActiveRecord: 20.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:48 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (22.5ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (87.6ms)
+Completed 200 OK in 91ms (Views: 67.8ms | ActiveRecord: 22.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:48 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (31.0ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (86.5ms)
+Completed 200 OK in 90ms (Views: 58.2ms | ActiveRecord: 31.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:49 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (22.8ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (69.7ms)
+Completed 200 OK in 73ms (Views: 49.5ms | ActiveRecord: 22.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:49 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.7ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (69.6ms)
+Completed 200 OK in 73ms (Views: 49.6ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:39:50 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (22.0ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (69.2ms)
+Completed 200 OK in 72ms (Views: 49.8ms | ActiveRecord: 22.0ms)
+  [1m[36mSignature Load (28.4ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+  [1m[35mSignature Load (30.4ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+  [1m[36mSignature Load (29.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+  [1m[35mSignature Load (29.0ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+  [1m[36mSignature Load (29.7ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+  [1m[35mSignature Load (36.2ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+  [1m[36mSignature Load (34.5ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+  [1m[35mSignature Load (29.6ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:43 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (23.9ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (62.3ms)
+Completed 200 OK in 98ms (Views: 70.0ms | ActiveRecord: 23.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:44 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (20.1ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 92ms (Views: 68.6ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:45 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (29.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 70ms (Views: 37.2ms | ActiveRecord: 29.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:46 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (15.7ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (41.5ms)
+Completed 200 OK in 64ms (Views: 44.3ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:46 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (15.7ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (242.9ms)
+Completed 200 OK in 265ms (Views: 245.7ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:48 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (20.0ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 76ms (Views: 52.5ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:49 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (15.6ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 71ms (Views: 51.9ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:50 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (20.3ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 70ms (Views: 46.5ms | ActiveRecord: 20.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:51 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.8ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (102.8ms)
+Completed 200 OK in 137ms (Views: 109.9ms | ActiveRecord: 22.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:52 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (21.7ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 64ms (Views: 38.3ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:52 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (15.5ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 64ms (Views: 44.9ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:53 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (21.0ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (51.9ms)
+Completed 200 OK in 84ms (Views: 59.4ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:54 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (27.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (43.5ms)
+Completed 200 OK in 82ms (Views: 51.1ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:54 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (15.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 64ms (Views: 44.6ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:55 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (15.5ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 64ms (Views: 45.2ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:55 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (26.3ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 70ms (Views: 40.4ms | ActiveRecord: 26.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:56 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (20.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 74ms (Views: 49.3ms | ActiveRecord: 20.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:56 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (20.3ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (260.1ms)
+Completed 200 OK in 287ms (Views: 262.8ms | ActiveRecord: 20.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:57 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (20.8ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (42.6ms)
+Completed 200 OK in 75ms (Views: 50.4ms | ActiveRecord: 20.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:58 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (27.0ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 83ms (Views: 52.0ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:58 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (19.7ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (53.2ms)
+Completed 200 OK in 84ms (Views: 60.7ms | ActiveRecord: 19.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:53:59 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (20.2ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (105.8ms)
+Completed 200 OK in 134ms (Views: 109.8ms | ActiveRecord: 20.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:54:00 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (15.5ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (55.4ms)
+Completed 200 OK in 79ms (Views: 59.4ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:54:00 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (20.2ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (246.1ms)
+Completed 200 OK in 278ms (Views: 253.8ms | ActiveRecord: 20.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:54:01 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (15.5ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 64ms (Views: 45.3ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:54:02 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (15.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 65ms (Views: 45.8ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:54:02 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (15.7ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (204.3ms)
+Completed 200 OK in 232ms (Views: 212.1ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:54:10 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (20.2ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (66.7ms)
+Completed 200 OK in 98ms (Views: 74.3ms | ActiveRecord: 20.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:54:13 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (31.6ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (34.6ms)
+Completed 200 OK in 73ms (Views: 37.4ms | ActiveRecord: 31.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:54:17 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (20.5ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (44.5ms)
+Completed 200 OK in 76ms (Views: 52.0ms | ActiveRecord: 20.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:54:35 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (25.2ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 79ms (Views: 49.5ms | ActiveRecord: 25.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:54:41 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (23.4ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (265.3ms)
+Completed 200 OK in 300ms (Views: 272.9ms | ActiveRecord: 23.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:54:49 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (23.9ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (56.1ms)
+Completed 200 OK in 86ms (Views: 58.8ms | ActiveRecord: 23.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 00:57:11 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (17.2ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 67ms (Views: 37.6ms | ActiveRecord: 17.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 01:00:42 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (23.2ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 80ms (Views: 52.5ms | ActiveRecord: 23.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 01:01:28 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (16.1ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 58ms (Views: 38.4ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 01:01:31 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (17.1ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 59ms (Views: 37.8ms | ActiveRecord: 17.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 01:01:32 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (24.4ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 80ms (Views: 51.5ms | ActiveRecord: 24.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 01:01:34 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.1ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (44.5ms)
+Completed 200 OK in 78ms (Views: 52.0ms | ActiveRecord: 22.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 01:01:35 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (23.1ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 73ms (Views: 45.5ms | ActiveRecord: 23.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 01:01:36 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (29.6ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered home/index.html.erb within layouts/application (44.5ms)
+Completed 200 OK in 87ms (Views: 53.3ms | ActiveRecord: 29.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Dec 24 01:01:37 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (20.5ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 94ms (Views: 70.0ms | ActiveRecord: 20.5ms)
