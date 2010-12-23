@@ -2366,3 +2366,58 @@ Started GET "/" for 127.0.0.1 at Thu Dec 23 21:37:42 +0800 2010
   [1m[36mSignature Load (27.2ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
 Rendered home/index.html.erb within layouts/application (9727.3ms)
 Completed 200 OK in 9730ms (Views: 9702.8ms | ActiveRecord: 27.2ms)
+  [1m[36mSignature Load (27.1ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY signatures.id DESC LIMIT 1[0m
+  [1m[36mSignature Load (7.4ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY signatures.id DESC LIMIT 1[0m
+  [1m[35mSignature Load (90.2ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+  [1m[36mSignature Load (37.4ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+  [1m[35mSignature Load (28.2ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+  [1m[36mSignature Load (37.4ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+  [1m[35mSignature Load (35.8ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+  [1m[36mSignature Load (28.8ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+  [1m[35mSignature Load (37.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+  [1m[36mSignature Load (36.1ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+  [1m[35mSignature Load (35.9ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+  [1m[36mSignature Load (42.8ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+  [1m[35mSignature Load (28.6ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+  [1m[36mSignature Load (28.9ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+  [1m[36mSQL (53.8ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateSignatures (20101221160822)
+  [1m[35mSQL (19.0ms)[0m  CREATE TABLE `signatures` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `body` text, `rank` int(11) DEFAULT 0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+Mysql2::Error: Table 'signatures' already exists: CREATE TABLE `signatures` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `body` text, `rank` int(11) DEFAULT 0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (37.6ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (0.8ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (9.7ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateSignatures (20101221160822)
+  [1m[35mSQL (4.0ms)[0m  CREATE TABLE `signatures` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `body` text, `rank` int(11) DEFAULT 0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20101221160822')[0m
+Migrating to CreateUsers (20101223131941)
+  [1m[35mSQL (11.4ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `location` varchar(255), `uid` varchar(255), `content` text, `link` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20101223131941')[0m
+Migrating to AddUpDownUserIdInSignatures (20101223135154)
+  [1m[35mSQL (5.4ms)[0m  ALTER TABLE `signatures` ADD `up` int(11) DEFAULT 0
+  [1m[36mSQL (8.9ms)[0m  [1mALTER TABLE `signatures` ADD `down` int(11) DEFAULT 0[0m
+  [1m[35mSQL (3.0ms)[0m  ALTER TABLE `signatures` ADD `user_id` int(11)
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20101223135154')[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.8ms)[0m  [1mdescribe `signatures`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW KEYS FROM `signatures`
+  [1m[36mSQL (1.0ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW KEYS FROM `users`
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSignature Load (17.8ms)[0m  SELECT `signatures`.* FROM `signatures`
+  [1m[36mSignature Load (0.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY signatures.id DESC LIMIT 1[0m
+  [1m[35mSignature Load (0.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY signatures.id DESC LIMIT 1
+  [1m[36mSignature Load (0.3ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY signatures.id DESC LIMIT 1[0m
+  [1m[35mSignature Load (0.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY signatures.id DESC LIMIT 1
+  [1m[36mSignature Load (0.3ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY signatures.id DESC LIMIT 1[0m
+  [1m[35mSignature Load (0.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY signatures.id DESC LIMIT 1
+  [1m[36mSignature Load (0.3ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY signatures.id DESC LIMIT 1[0m
+  [1m[35mSignature Load (0.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY signatures.id DESC LIMIT 1

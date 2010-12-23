@@ -10,11 +10,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101221160822) do
+ActiveRecord::Schema.define(:version => 20101223135154) do
 
   create_table "signatures", :force => true do |t|
     t.text     "body"
-    t.integer  "rank"
+    t.integer  "rank",       :default => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "up",         :default => 0
+    t.integer  "down",       :default => 0
+    t.integer  "user_id"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "location"
+    t.string   "uid"
+    t.text     "content"
+    t.string   "link"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
