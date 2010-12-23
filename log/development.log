@@ -2309,3 +2309,60 @@ Started GET "/" for 127.0.0.1 at Thu Dec 23 21:27:46 +0800 2010
   Processing by HomeController#index as HTML
 Rendered home/index.html.erb within layouts/application (102.1ms)
 Completed 200 OK in 106ms (Views: 105.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 21:36:04 +0800 2010
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (84.1ms)
+Completed   in 87ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Singature):
+    1: <%= Singature.order("rand()").limit(1).body %>
+  app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___1148777354_44316800_0'
+
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 21:36:26 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (707.2ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (888.4ms)
+Completed   in 971ms
+
+ActionView::Template::Error (undefined method `body' for #<ActiveRecord::Relation:0x58a9cb0>):
+    1: <%= Signature.order("rand()").limit(1).body %>
+  app/views/home/index.html.erb:1:in `_app_views_home_index_html_erb___1148777354_46982820_0'
+
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.8ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 21:36:46 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (22.2ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (11612.7ms)
+Completed 200 OK in 11616ms (Views: 11593.3ms | ActiveRecord: 729.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 21:37:05 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (17.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (9362.7ms)
+Completed 200 OK in 9366ms (Views: 9347.9ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 21:37:24 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[35mSignature Load (28.5ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1
+Rendered home/index.html.erb within layouts/application (9001.6ms)
+Completed 200 OK in 9005ms (Views: 8975.8ms | ActiveRecord: 28.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Dec 23 21:37:42 +0800 2010
+  Processing by HomeController#index as HTML
+  [1m[36mSignature Load (27.2ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY rand() LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (9727.3ms)
+Completed 200 OK in 9730ms (Views: 9702.8ms | ActiveRecord: 27.2ms)
