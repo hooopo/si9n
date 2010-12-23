@@ -1,4 +1,14 @@
 class SignaturesController < ApplicationController
+
+  def random
+    @signature = Signature.random
+    respond_to do |format|
+      format.html
+      format.js{ render :json => @signature}
+    end
+  end
+
+
   # GET /signatures
   # GET /signatures.xml
   def index
