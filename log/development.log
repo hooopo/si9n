@@ -6371,3 +6371,83 @@ Started POST "/signatures" for 127.0.0.1 at Sun Dec 26 03:11:08 +0800 2010
   [1m[35mSQL (0.3ms)[0m  ROLLBACK
 Rendered signatures/create.js.erb (0.4ms)
 Completed 200 OK in 16ms (Views: 4.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/signatures" for 127.0.0.1 at Sun Dec 26 03:12:53 +0800 2010
+  Processing by SignaturesController#create as JS
+  Parameters: {"signature"=>{"body"=>"9678678"}, "authenticity_token"=>"wB6kUU7l5O1MvVeSEnjoVkyhiSch6tEr65HMEfIfiCs=", "utf8"=>"\342\234\223"}
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSignature Load (17.8ms)[0m  SELECT `signatures`.`id` FROM `signatures` WHERE (`signatures`.`body` = BINARY '9678678') LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `signatures`[0m
+  [1m[35mAREL (26.8ms)[0m  INSERT INTO `signatures` (`updated_at`, `created_at`, `rank`, `body`) VALUES ('2010-12-25 19:12:53', '2010-12-25 19:12:53', 0, '9678678')
+  [1m[36mSQL (4.8ms)[0m  [1mCOMMIT[0m
+Rendered signatures/create.js.erb (0.4ms)
+Completed 200 OK in 77ms (Views: 12.4ms | ActiveRecord: 51.0ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sun Dec 26 03:13:01 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (28.6ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (8.3ms)
+Completed 200 OK in 69ms (Views: 34.9ms | ActiveRecord: 28.6ms)
+
+
+Started GET "/signatures/new" for 127.0.0.1 at Sun Dec 26 03:13:03 +0800 2010
+  Processing by SignaturesController#new as JS
+Rendered signatures/_new.html.erb (3.0ms)
+Rendered signatures/new.js.erb (4.0ms)
+Completed 200 OK in 13ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signatures" for 127.0.0.1 at Sun Dec 26 03:13:07 +0800 2010
+  Processing by SignaturesController#create as JS
+  Parameters: {"signature"=>{"body"=>"888tyy"}, "authenticity_token"=>"wB6kUU7l5O1MvVeSEnjoVkyhiSch6tEr65HMEfIfiCs=", "utf8"=>"\342\234\223"}
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSignature Load (17.5ms)[0m  SELECT `signatures`.`id` FROM `signatures` WHERE (`signatures`.`body` = BINARY '888tyy') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mdescribe `signatures`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `signatures` (`rank`, `updated_at`, `created_at`, `body`) VALUES (0, '2010-12-25 19:13:07', '2010-12-25 19:13:07', '888tyy')
+  [1m[36mSQL (1.6ms)[0m  [1mCOMMIT[0m
+Rendered signatures/create.js.erb (0.7ms)
+Completed 200 OK in 36ms (Views: 4.7ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sun Dec 26 03:15:16 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (49.7ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (3.4ms)
+Completed 200 OK in 62ms (Views: 7.4ms | ActiveRecord: 49.7ms)
+
+
+Started GET "/signatures/new" for 127.0.0.1 at Sun Dec 26 03:17:26 +0800 2010
+  Processing by SignaturesController#new as JS
+Rendered signatures/_new.html.erb (4.6ms)
+Rendered signatures/new.js.erb (6.1ms)
+Completed 200 OK in 26ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sun Dec 26 03:22:04 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[36mSignature Load (44.2ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.html.erb within layouts/application (102.3ms)
+Completed 200 OK in 176ms (Views: 109.8ms | ActiveRecord: 44.2ms)
+
+
+Started GET "/signatures/new" for 127.0.0.1 at Sun Dec 26 03:22:07 +0800 2010
+  Processing by SignaturesController#new as JS
+Rendered signatures/_new.html.erb (3.8ms)
+Rendered signatures/new.js.erb (6.5ms)
+Completed 200 OK in 535ms (Views: 467.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sun Dec 26 03:22:19 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[35mSignature Load (47.9ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 109ms (Views: 55.3ms | ActiveRecord: 47.9ms)
+
+
+Started GET "/signatures/new" for 127.0.0.1 at Sun Dec 26 03:22:23 +0800 2010
+  Processing by SignaturesController#new as JS
+Rendered signatures/_new.html.erb (14.8ms)
+Rendered signatures/new.js.erb (16.3ms)
+Completed 200 OK in 60ms (Views: 24.1ms | ActiveRecord: 0.0ms)
