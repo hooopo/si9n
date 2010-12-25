@@ -1,5 +1,5 @@
 Bookshare::Application.routes.draw do
-  resources :signatures
+  
 
   get "home/index"
 
@@ -12,6 +12,8 @@ Bookshare::Application.routes.draw do
 
   root :to => "home#index"
   match "book/search" => "book#search"
+  match "signatures/random" => "signatures#random"
+  resources :signatures
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
