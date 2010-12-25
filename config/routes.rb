@@ -13,7 +13,12 @@ Bookshare::Application.routes.draw do
   root :to => "home#index"
   match "book/search" => "book#search"
   match "signatures/random" => "signatures#random"
-  resources :signatures
+  resources :signatures do
+    member do
+      get :up
+      post :down
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

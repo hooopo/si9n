@@ -1,10 +1,18 @@
 class SignaturesController < ApplicationController
 
-  respond_to :html, :js, :except => :create
+  respond_to :html, :js, :except => [:create, :up, :down]
 
   def random
     @signature = Signature.random
     respond_with(@signature)
+  end
+
+  def up
+    @signature = Signature.find(params[:id])
+    @signature.increment!(:up)
+    respond_to do |format|
+      format.js
+    end
   end
 
 

@@ -4,7 +4,9 @@
 <div id="signature-body"><%=  @signature.id %>.<%= @signature.body %></div>
 <div id="op">
   <span><%= link_to "刷新", signatures_random_path, :remote => true %></span>
-  <span><%= link_to "添加", new_signature_path, :remote => true, :class => "signature-new" %></span>
+  <span><%= link_to "添加", new_signature_path, :remote => true %></span>
+  <span><%= link_to "给力", up_signature_path(@signature), :remote => true %></span>
+  <span><%= link_to "不给力", down_signature_path(@signature), :remote => true %></span>
 
 </div>
 
