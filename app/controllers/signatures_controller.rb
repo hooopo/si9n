@@ -22,26 +22,25 @@ class SignaturesController < ApplicationController
 #
 #  # GET /signatures/1
 #  # GET /signatures/1.xml
-#  def show
-#    @signature = Signature.find(params[:id])
+  def show
+    @signature = Signature.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      #format.xml  { render :xml => @signature }
+    end
+  end
 #
-#    respond_to do |format|
-#      format.html # show.html.erb
-#      format.xml  { render :xml => @signature }
-#    end
-#  end
-#
-#  # GET /signatures/new
-#  # GET /signatures/new.xml
-#  def new
-#    @signature = Signature.new
-#
-#    respond_to do |format|
-#      format.html # new.html.erb
-#      format.xml  { render :xml => @signature }
-#    end
-#  end
-#
+  # GET /signatures/new
+  # GET /signatures/new.xml
+  def new
+    @signature = Signature.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+    end
+  end
+
 #  # GET /signatures/1/edit
 #  def edit
 #    @signature = Signature.find(params[:id])
@@ -49,19 +48,19 @@ class SignaturesController < ApplicationController
 #
 #  # POST /signatures
 #  # POST /signatures.xml
-#  def create
-#    @signature = Signature.new(params[:signature])
-#
-#    respond_to do |format|
-#      if @signature.save
-#        format.html { redirect_to(@signature, :notice => 'Signature was successfully created.') }
-#        format.xml  { render :xml => @signature, :status => :created, :location => @signature }
-#      else
-#        format.html { render :action => "new" }
-#        format.xml  { render :xml => @signature.errors, :status => :unprocessable_entity }
-#      end
-#    end
-#  end
+  def create
+    @signature = Signature.new(params[:signature])
+
+    respond_to do |format|
+      if @signature.save
+        format.html { redirect_to(@signature, :notice => '添加成功！') }
+        #format.xml  { render :xml => @signature, :status => :created, :location => @signature }
+      else
+        format.html { render :action => "new" }
+        #format.xml  { render :xml => @signature.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
 #
 #  # PUT /signatures/1
 #  # PUT /signatures/1.xml

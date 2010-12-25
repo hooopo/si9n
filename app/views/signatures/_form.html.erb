@@ -1,7 +1,7 @@
 <%= form_for(@signature) do |f| %>
   <% if @signature.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@signature.errors.count, "error") %> prohibited this signature from being saved:</h2>
+      <h2><%= pluralize(@signature.errors.count, "错误") %> 由于出现错误:</h2>
 
       <ul>
       <% @signature.errors.full_messages.each do |msg| %>
@@ -12,14 +12,11 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :body %><br />
-    <%= f.text_area :body %>
+    <%= f.label :body, "内容" %><br />
+    <%= f.text_area :body, :size => "60x5" %>
   </div>
-  <div class="field">
-    <%= f.label :rank %><br />
-    <%= f.text_field :rank %>
-  </div>
+  
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "添加" %>
   </div>
 <% end %>

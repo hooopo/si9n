@@ -4354,3 +4354,803 @@ Completed 200 OK in 1942ms (Views: 1921.3ms | ActiveRecord: 16.6ms)
   [1m[35mSQL (39.6ms)[0m  BEGIN
   [1m[36mSignature Load (60.8ms)[0m  [1mSELECT `signatures`.`id` FROM `signatures` WHERE (`signatures`.`body` = BINARY '111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111') LIMIT 1[0m
   [1m[35mSQL (0.3ms)[0m  ROLLBACK
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:05:31 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (203.5ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (191.2ms)
+Completed 200 OK in 812ms (Views: 408.2ms | ActiveRecord: 203.5ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:05:35 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (29.3ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (43.5ms)
+Completed 200 OK in 236ms (Views: 105.0ms | ActiveRecord: 29.3ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:05:37 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (31.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (3.5ms)
+Completed 200 OK in 5071ms (Views: 14.1ms | ActiveRecord: 31.3ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:06:04 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (31.5ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (8.3ms)
+Completed 200 OK in 58ms (Views: 21.6ms | ActiveRecord: 31.5ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:06:07 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (28.7ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (3.5ms)
+Completed 200 OK in 41ms (Views: 7.5ms | ActiveRecord: 28.7ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:06:12 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (28.7ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (7.2ms)
+Completed 200 OK in 52ms (Views: 18.1ms | ActiveRecord: 28.7ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:06:16 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (28.6ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (8.4ms)
+Completed 200 OK in 75ms (Views: 41.4ms | ActiveRecord: 28.6ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:06:24 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (30.1ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (3.4ms)
+Completed 200 OK in 50ms (Views: 14.5ms | ActiveRecord: 30.1ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:06:28 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (25.9ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (8.3ms)
+Completed 200 OK in 101ms (Views: 38.6ms | ActiveRecord: 25.9ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:06:33 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (32.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (30.3ms)
+Completed 200 OK in 97ms (Views: 42.3ms | ActiveRecord: 32.6ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:06:52 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (22.1ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (5.4ms)
+Completed 200 OK in 106ms (Views: 18.5ms | ActiveRecord: 22.1ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:07:15 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (24.3ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (8.3ms)
+Completed 200 OK in 51ms (Views: 21.5ms | ActiveRecord: 24.3ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:07:27 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (26.4ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (8.3ms)
+Completed 200 OK in 53ms (Views: 21.5ms | ActiveRecord: 26.4ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:07:41 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (30.9ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (3.4ms)
+Completed 200 OK in 43ms (Views: 7.4ms | ActiveRecord: 30.9ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:07:52 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (30.2ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (3.4ms)
+Completed 200 OK in 49ms (Views: 14.2ms | ActiveRecord: 30.2ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:08:07 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (30.4ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (8.4ms)
+Completed 200 OK in 57ms (Views: 21.6ms | ActiveRecord: 30.4ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:08:12 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (31.6ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (8.3ms)
+Completed 200 OK in 58ms (Views: 21.4ms | ActiveRecord: 31.6ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:08:16 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (29.1ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (7.1ms)
+Completed 200 OK in 52ms (Views: 18.3ms | ActiveRecord: 29.1ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:08:17 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (24.8ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (8.3ms)
+Completed 200 OK in 111ms (Views: 21.5ms | ActiveRecord: 24.8ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:08:18 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (26.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (4.0ms)
+Completed 200 OK in 48ms (Views: 16.8ms | ActiveRecord: 26.6ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:08:20 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (29.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (8.2ms)
+Completed 200 OK in 56ms (Views: 21.5ms | ActiveRecord: 29.3ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:08:25 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (30.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (8.2ms)
+Completed 200 OK in 57ms (Views: 21.4ms | ActiveRecord: 30.6ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:08:50 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (24.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (8.2ms)
+Completed 200 OK in 51ms (Views: 21.5ms | ActiveRecord: 24.3ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:08:59 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (31.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (3.4ms)
+Completed 200 OK in 52ms (Views: 15.0ms | ActiveRecord: 31.6ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:09:00 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (31.1ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (8.3ms)
+Completed 200 OK in 58ms (Views: 21.5ms | ActiveRecord: 31.1ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:09:02 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (30.2ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (15.2ms)
+Completed 200 OK in 62ms (Views: 26.4ms | ActiveRecord: 30.2ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:09:06 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (29.1ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (3.4ms)
+Completed 200 OK in 48ms (Views: 14.2ms | ActiveRecord: 29.1ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:09:09 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (15.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (3.5ms)
+Completed 200 OK in 37ms (Views: 16.4ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:09:12 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (30.8ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (3.4ms)
+Completed 200 OK in 43ms (Views: 7.5ms | ActiveRecord: 30.8ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:09:15 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (15.5ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (8.0ms)
+Completed 200 OK in 42ms (Views: 21.2ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:09:25 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (24.6ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (7.8ms)
+Completed 200 OK in 51ms (Views: 21.2ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:09:27 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (27.1ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (4.0ms)
+Completed 200 OK in 49ms (Views: 17.1ms | ActiveRecord: 27.1ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:15:04 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[35mSignature Load (175.2ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.html.erb within layouts/application (133.8ms)
+Completed   in 356ms
+
+ActionView::Template::Error (undefined local variable or method `random_sigatures_path' for #<#<Class:0x4756670>:0x47549d8>):
+    3: 
+    4: <div id="signature-body"><%=  @signature.id %>.<%= @signature.body %></div>
+    5: <div id="op">
+    6:   <span><%= link_to "刷新", random_sigatures_path, :remote => true %></span>
+    7:   <span><%= link_to "添加", "#", :remote => true %></span>
+    8: 
+    9: </div>
+  app/views/signatures/random.html.erb:6:in `_app_views_signatures_random_html_erb___875398419_37394560_0'
+  app/controllers/signatures_controller.rb:5:in `random'
+
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (66.3ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (77.6ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:15:15 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[36mSignature Load (24.1ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.html.erb within layouts/application (24.3ms)
+Completed   in 61ms
+
+ActionView::Template::Error (undefined local variable or method `random_sigature_path' for #<#<Class:0x4b73410>:0x4b6c160>):
+    3: 
+    4: <div id="signature-body"><%=  @signature.id %>.<%= @signature.body %></div>
+    5: <div id="op">
+    6:   <span><%= link_to "刷新", random_sigature_path, :remote => true %></span>
+    7:   <span><%= link_to "添加", "#", :remote => true %></span>
+    8: 
+    9: </div>
+  app/views/signatures/random.html.erb:6:in `_app_views_signatures_random_html_erb___875398419_39539340_0'
+  app/controllers/signatures_controller.rb:5:in `random'
+
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:16:13 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[35mSignature Load (165.4ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.html.erb within layouts/application (13391.5ms)
+Completed 200 OK in 13572ms (Views: 13394.4ms | ActiveRecord: 165.4ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:16:33 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (30.4ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (3.4ms)
+Completed 200 OK in 50ms (Views: 14.5ms | ActiveRecord: 30.4ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:16:38 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (29.4ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (3.5ms)
+Completed 200 OK in 56ms (Views: 13.9ms | ActiveRecord: 29.4ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:16:38 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (15.5ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (4.7ms)
+Completed 200 OK in 35ms (Views: 15.0ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:16:39 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (30.9ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (4.2ms)
+Completed 200 OK in 62ms (Views: 8.3ms | ActiveRecord: 30.9ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:18:51 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (31.1ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (26.1ms)
+Completed 200 OK in 339ms (Views: 37.7ms | ActiveRecord: 31.1ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:19:53 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (46.0ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (6.1ms)
+Completed 200 OK in 61ms (Views: 10.2ms | ActiveRecord: 46.0ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:00 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (22.7ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (7.9ms)
+Completed 200 OK in 49ms (Views: 21.0ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:04 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (23.0ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (7.9ms)
+Completed 200 OK in 49ms (Views: 20.9ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:08 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (31.4ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (7.4ms)
+Completed 200 OK in 48ms (Views: 11.7ms | ActiveRecord: 31.4ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:09 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (30.2ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (3.4ms)
+Completed 200 OK in 50ms (Views: 14.5ms | ActiveRecord: 30.2ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:12 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (31.1ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (8.3ms)
+Completed 200 OK in 58ms (Views: 21.5ms | ActiveRecord: 31.1ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:20 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (31.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (8.0ms)
+Completed 200 OK in 59ms (Views: 23.0ms | ActiveRecord: 31.3ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:23 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[36mSignature Load (27.4ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.html.erb within layouts/application (1584.5ms)
+Completed 200 OK in 1624ms (Views: 1592.0ms | ActiveRecord: 27.4ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:37 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[35mSignature Load (17.0ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.html.erb within layouts/application (69.3ms)
+Completed 200 OK in 94ms (Views: 72.7ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:38 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[36mSignature Load (23.7ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 65ms (Views: 36.9ms | ActiveRecord: 23.7ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:40 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[35mSignature Load (19.6ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.html.erb within layouts/application (186.8ms)
+Completed 200 OK in 219ms (Views: 194.7ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:41 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[36mSignature Load (23.8ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.html.erb within layouts/application (51.9ms)
+Completed 200 OK in 88ms (Views: 59.6ms | ActiveRecord: 23.8ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:42 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[35mSignature Load (25.9ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 95ms (Views: 63.7ms | ActiveRecord: 25.9ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:43 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[36mSignature Load (28.9ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 70ms (Views: 36.7ms | ActiveRecord: 28.9ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:44 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[35mSignature Load (27.2ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.html.erb within layouts/application (66.2ms)
+Completed 200 OK in 106ms (Views: 73.9ms | ActiveRecord: 27.2ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:46 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[36mSignature Load (27.8ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.html.erb within layouts/application (182.6ms)
+Completed 200 OK in 223ms (Views: 190.2ms | ActiveRecord: 27.8ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:47 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[35mSignature Load (29.0ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.html.erb within layouts/application (73.0ms)
+Completed 200 OK in 115ms (Views: 80.5ms | ActiveRecord: 29.0ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:49 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[36mSignature Load (29.1ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.html.erb within layouts/application (76.1ms)
+Completed 200 OK in 118ms (Views: 83.8ms | ActiveRecord: 29.1ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:50 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[35mSignature Load (23.7ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.html.erb within layouts/application (52.7ms)
+Completed 200 OK in 89ms (Views: 60.4ms | ActiveRecord: 23.7ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:20:51 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[36mSignature Load (15.8ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 72ms (Views: 51.8ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:21:45 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[35mSignature Load (29.8ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.html.erb within layouts/application (3360.3ms)
+Completed 200 OK in 3405ms (Views: 3369.5ms | ActiveRecord: 29.8ms)
+
+
+Started GET "/signatures/new" for 127.0.0.1 at Sat Dec 25 22:21:51 +0800 2010
+  Processing by SignaturesController#new as HTML
+Rendered signatures/_form.html.erb (2.2ms)
+Rendered signatures/new.html.erb within layouts/application (5.8ms)
+Completed   in 14ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@signature) do |f| %>
+    2:   <% if @signature.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@signature.errors.count, "error") %> prohibited this signature from being saved:</h2>
+  app/views/signatures/_form.html.erb:1:in `_app_views_signatures__form_html_erb__1697984660_39325840_1068830'
+  app/views/signatures/new.html.erb:3:in `_app_views_signatures_new_html_erb__1994732510_39335340_0'
+
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.3ms)
+
+
+Started GET "/signatures/new" for 127.0.0.1 at Sat Dec 25 22:23:35 +0800 2010
+
+SyntaxError (/home/hooopo/work/si9n/app/controllers/signatures_controller.rb:91: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started GET "/signatures/new" for 127.0.0.1 at Sat Dec 25 22:23:49 +0800 2010
+  Processing by SignaturesController#new as HTML
+Rendered signatures/_form.html.erb (125.3ms)
+Rendered signatures/new.html.erb within layouts/application (3141.5ms)
+Completed 200 OK in 3181ms (Views: 3149.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signatures/new" for 127.0.0.1 at Sat Dec 25 22:27:01 +0800 2010
+  Processing by SignaturesController#new as HTML
+Rendered signatures/_form.html.erb (3.8ms)
+Rendered signatures/new.html.erb within layouts/application (90.4ms)
+Completed 200 OK in 99ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signatures/new" for 127.0.0.1 at Sat Dec 25 22:27:33 +0800 2010
+  Processing by SignaturesController#new as HTML
+Rendered signatures/_form.html.erb (3.7ms)
+Rendered signatures/new.html.erb within layouts/application (87.9ms)
+Completed 200 OK in 96ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signatures/new" for 127.0.0.1 at Sat Dec 25 22:28:19 +0800 2010
+  Processing by SignaturesController#new as HTML
+Rendered signatures/_form.html.erb (3.4ms)
+Rendered signatures/new.html.erb within layouts/application (137.9ms)
+Completed 200 OK in 146ms (Views: 140.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signatures/new" for 127.0.0.1 at Sat Dec 25 22:28:47 +0800 2010
+  Processing by SignaturesController#new as HTML
+Rendered signatures/_form.html.erb (3.4ms)
+Rendered signatures/new.html.erb within layouts/application (119.5ms)
+Completed 200 OK in 128ms (Views: 122.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signatures" for 127.0.0.1 at Sat Dec 25 22:29:04 +0800 2010
+
+AbstractController::ActionNotFound (The action 'create' could not be found for SignaturesController):
+  
+
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.2ms)
+
+
+Started POST "/signatures" for 127.0.0.1 at Sat Dec 25 22:30:06 +0800 2010
+  Processing by SignaturesController#create as HTML
+  Parameters: {"commit"=>"添\345\212\240", "signature"=>{"body"=>""}, "authenticity_token"=>"wB6kUU7l5O1MvVeSEnjoVkyhiSch6tEr65HMEfIfiCs=", "utf8"=>"\342\234\223"}
+  [1m[36mSQL (15.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (256.3ms)[0m  SHOW TABLES
+  [1m[36mSignature Load (99.0ms)[0m  [1mSELECT `signatures`.`id` FROM `signatures` WHERE (`signatures`.`body` = BINARY '') LIMIT 1[0m
+  [1m[35mSQL (11.5ms)[0m  ROLLBACK
+Rendered signatures/_form.html.erb (4.0ms)
+Rendered signatures/new.html.erb within layouts/application (7615.6ms)
+Completed 200 OK in 8075ms (Views: 7623.1ms | ActiveRecord: 382.4ms)
+
+
+Started POST "/signatures" for 127.0.0.1 at Sat Dec 25 22:31:44 +0800 2010
+  Processing by SignaturesController#create as HTML
+  Parameters: {"commit"=>"添\345\212\240", "signature"=>{"body"=>"看见条推「女孩问男孩: ABCDEFG是什么意思啊？ 男孩回答: A boy can do everything for girl!」其实是ABCDEFGHIJK，A boy can do everything for girl! Haha I'm Just Kidding."}, "authenticity_token"=>"wB6kUU7l5O1MvVeSEnjoVkyhiSch6tEr65HMEfIfiCs=", "utf8"=>"\342\234\223"}
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSignature Load (5.6ms)[0m  SELECT `signatures`.`id` FROM `signatures` WHERE (`signatures`.`body` = BINARY '看见条推「女孩问男孩: ABCDEFG是什么意思啊？ 男孩回答: A boy can do everything for girl!」其实是ABCDEFGHIJK，A boy can do everything for girl! Haha I\'m Just Kidding.') LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `signatures`[0m
+  [1m[35mAREL (86.8ms)[0m  INSERT INTO `signatures` (`rank`, `body`, `updated_at`, `created_at`) VALUES (0, '看见条推「女孩问男孩: ABCDEFG是什么意思啊？ 男孩回答: A boy can do everything for girl!」其实是ABCDEFGHIJK，A boy can do everything for girl! Haha I\'m Just Kidding.', '2010-12-25 14:31:44', '2010-12-25 14:31:44')
+  [1m[36mSQL (30.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/signatures/4924
+Completed 302 Found in 256ms
+
+
+Started GET "/signatures/4924" for 127.0.0.1 at Sat Dec 25 22:31:44 +0800 2010
+  Processing by SignaturesController#show as HTML
+  Parameters: {"id"=>"4924"}
+Rendered signatures/show.html.erb within layouts/application (1.4ms)
+Completed   in 9ms
+
+ActionView::Template::Error (undefined method `body' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <b>Body:</b>
+    5:   <%= @signature.body %>
+    6: </p>
+    7: 
+    8: <p>
+  app/views/signatures/show.html.erb:5:in `_app_views_signatures_show_html_erb___1557774360_37661260_0'
+
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.9ms)
+
+
+Started POST "/signatures" for 127.0.0.1 at Sat Dec 25 22:33:36 +0800 2010
+  Processing by SignaturesController#create as HTML
+  Parameters: {"commit"=>"添\345\212\240", "signature"=>{"body"=>"看见条推「女孩问男孩: ABCDEFG是什么意思啊？ 男孩回答: A boy can do everything for girl!」其实是ABCDEFGHIJK，A boy can do everything for girl! Haha I'm Just Kidding."}, "authenticity_token"=>"wB6kUU7l5O1MvVeSEnjoVkyhiSch6tEr65HMEfIfiCs=", "utf8"=>"\342\234\223"}
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSignature Load (7.1ms)[0m  [1mSELECT `signatures`.`id` FROM `signatures` WHERE (`signatures`.`body` = BINARY '看见条推「女孩问男孩: ABCDEFG是什么意思啊？ 男孩回答: A boy can do everything for girl!」其实是ABCDEFGHIJK，A boy can do everything for girl! Haha I\'m Just Kidding.') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  ROLLBACK
+Rendered signatures/_form.html.erb (3.1ms)
+Rendered signatures/new.html.erb within layouts/application (1365.2ms)
+Completed 200 OK in 1388ms (Views: 1369.0ms | ActiveRecord: 7.6ms)
+
+
+Started POST "/signatures" for 127.0.0.1 at Sat Dec 25 22:35:32 +0800 2010
+  Processing by SignaturesController#create as HTML
+  Parameters: {"commit"=>"添\345\212\240", "signature"=>{"body"=>"上数学课写语文作业，上语文课写数学作业，请问他的装逼指数是多\345\260\221"}, "authenticity_token"=>"wB6kUU7l5O1MvVeSEnjoVkyhiSch6tEr65HMEfIfiCs=", "utf8"=>"\342\234\223"}
+  [1m[36mSQL (11.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSignature Load (108.6ms)[0m  SELECT `signatures`.`id` FROM `signatures` WHERE (`signatures`.`body` = BINARY '上数学课写语文作业，上语文课写数学作业，请问他的装逼指数是多少') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mdescribe `signatures`[0m
+  [1m[35mAREL (18.6ms)[0m  INSERT INTO `signatures` (`updated_at`, `created_at`, `rank`, `body`) VALUES ('2010-12-25 14:35:33', '2010-12-25 14:35:33', 0, '上数学课写语文作业，上语文课写数学作业，请问他的装逼指数是多少')
+  [1m[36mSQL (3.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/signatures/4925
+Completed 302 Found in 218ms
+
+
+Started GET "/signatures/4925" for 127.0.0.1 at Sat Dec 25 22:35:33 +0800 2010
+  Processing by SignaturesController#show as HTML
+  Parameters: {"id"=>"4925"}
+Rendered signatures/show.html.erb within layouts/application (0.6ms)
+Completed   in 4ms
+
+ActionView::Template::Error (undefined method `body' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <b>内容:</b>
+    5:   <%= @signature.body %>
+    6: </p>
+    7: 
+    8: 
+  app/views/signatures/show.html.erb:5:in `_app_views_signatures_show_html_erb___1557774360_39587020_0'
+
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /home/hooopo/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.6ms)
+
+
+Started GET "/signatures/4925" for 127.0.0.1 at Sat Dec 25 22:35:58 +0800 2010
+  Processing by SignaturesController#show as HTML
+  Parameters: {"id"=>"4925"}
+  [1m[35mSignature Load (0.6ms)[0m  SELECT `signatures`.* FROM `signatures` WHERE (`signatures`.`id` = 4925) LIMIT 1
+Rendered signatures/show.html.erb within layouts/application (9676.9ms)
+Completed 200 OK in 9686ms (Views: 9679.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:41:11 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[36mSignature Load (24.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.html.erb within layouts/application (55.7ms)
+Completed 200 OK in 93ms (Views: 63.2ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/signatures/new" for 127.0.0.1 at Sat Dec 25 22:41:15 +0800 2010
+  Processing by SignaturesController#new as HTML
+Rendered signatures/_form.html.erb (24.4ms)
+Rendered signatures/new.html.erb within layouts/application (63.7ms)
+Completed 200 OK in 72ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signatures" for 127.0.0.1 at Sat Dec 25 22:42:17 +0800 2010
+  Processing by SignaturesController#create as HTML
+  Parameters: {"commit"=>"添\345\212\240", "signature"=>{"body"=>"期末了，卷子泛滥成灾，作业逆流成河\343\200\202"}, "authenticity_token"=>"wB6kUU7l5O1MvVeSEnjoVkyhiSch6tEr65HMEfIfiCs=", "utf8"=>"\342\234\223"}
+  [1m[35mSQL (20.1ms)[0m  BEGIN
+  [1m[36mSignature Load (109.2ms)[0m  [1mSELECT `signatures`.`id` FROM `signatures` WHERE (`signatures`.`body` = BINARY '期末了，卷子泛滥成灾，作业逆流成河。') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  describe `signatures`
+  [1m[36mAREL (26.9ms)[0m  [1mINSERT INTO `signatures` (`updated_at`, `rank`, `body`, `created_at`) VALUES ('2010-12-25 14:42:17', 0, '期末了，卷子泛滥成灾，作业逆流成河。', '2010-12-25 14:42:17')[0m
+  [1m[35mSQL (1.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/signatures/4926
+Completed 302 Found in 217ms
+
+
+Started GET "/signatures/4926" for 127.0.0.1 at Sat Dec 25 22:42:17 +0800 2010
+  Processing by SignaturesController#show as HTML
+  Parameters: {"id"=>"4926"}
+  [1m[36mSignature Load (0.6ms)[0m  [1mSELECT `signatures`.* FROM `signatures` WHERE (`signatures`.`id` = 4926) LIMIT 1[0m
+Rendered signatures/show.html.erb within layouts/application (3978.3ms)
+Completed 200 OK in 3995ms (Views: 3987.7ms | ActiveRecord: 158.9ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:42:32 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[35mSignature Load (30.8ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.html.erb within layouts/application (582.6ms)
+Completed 200 OK in 626ms (Views: 590.3ms | ActiveRecord: 30.8ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:42:39 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[36mSignature Load (16.0ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.html.erb within layouts/application (50.7ms)
+Completed 200 OK in 80ms (Views: 58.6ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:42:41 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[35mSignature Load (23.1ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.html.erb within layouts/application (58.7ms)
+Completed 200 OK in 95ms (Views: 66.5ms | ActiveRecord: 23.1ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:42:45 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[36mSignature Load (29.3ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 77ms (Views: 42.9ms | ActiveRecord: 29.3ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:42:49 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[35mSignature Load (23.5ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.html.erb within layouts/application (48.3ms)
+Completed 200 OK in 85ms (Views: 56.3ms | ActiveRecord: 23.5ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:42:50 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[36mSignature Load (25.9ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.html.erb within layouts/application (68.6ms)
+Completed 200 OK in 107ms (Views: 76.2ms | ActiveRecord: 25.9ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:42:51 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[35mSignature Load (29.4ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.html.erb within layouts/application (69.7ms)
+Completed 200 OK in 106ms (Views: 72.5ms | ActiveRecord: 29.4ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:42:52 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[36mSignature Load (15.4ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.html.erb within layouts/application (137.0ms)
+Completed 200 OK in 228ms (Views: 145.0ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:43:07 +0800 2010
+  Processing by SignaturesController#random as HTML
+  [1m[35mSignature Load (25.0ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.html.erb within layouts/application (9343.2ms)
+Completed 200 OK in 9381ms (Views: 9350.8ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:43:19 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (31.3ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (8.3ms)
+Completed 200 OK in 69ms (Views: 33.0ms | ActiveRecord: 31.3ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:43:20 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (29.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (3.4ms)
+Completed 200 OK in 49ms (Views: 14.4ms | ActiveRecord: 29.3ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:43:21 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (22.8ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (7.9ms)
+Completed 200 OK in 49ms (Views: 21.2ms | ActiveRecord: 22.8ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:43:22 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (29.5ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (8.3ms)
+Completed 200 OK in 56ms (Views: 21.6ms | ActiveRecord: 29.5ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:43:23 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (29.2ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (3.5ms)
+Completed 200 OK in 48ms (Views: 14.3ms | ActiveRecord: 29.2ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:43:24 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (28.5ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (3.4ms)
+Completed 200 OK in 107ms (Views: 73.3ms | ActiveRecord: 28.5ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:43:25 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (28.3ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (3.4ms)
+Completed 200 OK in 47ms (Views: 14.1ms | ActiveRecord: 28.3ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:43:26 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (22.3ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (7.8ms)
+Completed 200 OK in 49ms (Views: 21.0ms | ActiveRecord: 22.3ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:43:26 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (54.8ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (8.3ms)
+Completed 200 OK in 81ms (Views: 21.5ms | ActiveRecord: 54.8ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:43:27 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[35mSignature Load (26.8ms)[0m  SELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1
+Rendered signatures/random.js.erb (3.9ms)
+Completed 200 OK in 49ms (Views: 16.9ms | ActiveRecord: 26.8ms)
+
+
+Started GET "/signatures/random" for 127.0.0.1 at Sat Dec 25 22:43:29 +0800 2010
+  Processing by SignaturesController#random as JS
+  [1m[36mSignature Load (29.5ms)[0m  [1mSELECT `signatures`.* FROM `signatures` ORDER BY RAND() LIMIT 1[0m
+Rendered signatures/random.js.erb (7.2ms)
+Completed 200 OK in 53ms (Views: 18.4ms | ActiveRecord: 29.5ms)
