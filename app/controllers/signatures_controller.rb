@@ -1,6 +1,6 @@
 class SignaturesController < ApplicationController
 
-  respond_to :html, :js
+  respond_to :html, :js, :except => :create
 
   def random
     @signature = Signature.random
@@ -42,18 +42,16 @@ class SignaturesController < ApplicationController
   #  # POST /signatures.xml
   def create
     @signature = Signature.new(params[:signature])
-    flash[:notice] = "添加成功！" if @signature.save
-    respond_with(@signature)
-
-#    respond_to do |format|
-#      if @signature.save
-#        format.html { redirect_to(@signature, :notice => '添加成功！') }
-#        format.js
-#      else
-#        format.html { render :action => "new" }
-#        format.js
-#      end
-#    end
+    #flash[:notice] = "添加成功！" if @signature.save
+    respond_to do |format|
+      if @signature.save
+        format.html { redirect_to(@signature, :notice => '添加成功！') }
+        format.js
+      else
+        format.html { render :action => "new" }
+        format.js
+      end
+    end
   end
   #
   #  # PUT /signatures/1
