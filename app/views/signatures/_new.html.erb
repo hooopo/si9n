@@ -1,0 +1,9 @@
+<%= form_for(@signature, :remote => true) do |f| %>
+  <div class="field">
+    <%#= f.label :body, "内容" %><br />
+    <%= f.text_area :body, :size => "60x5" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "添加" %>
+  </div>
+<% end %>

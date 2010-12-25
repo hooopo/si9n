@@ -4,22 +4,14 @@ $(function(){
     // Dialog
     $('#dialog').dialog({
         autoOpen: false,
-        width: 600,
-        buttons: {
-            "确定": function() {
-                $(this).dialog("close");
-            },
-            "取消": function() {
-                $(this).dialog("close");
-            }
-        }
+        width: 600
     });
 
-    // Dialog Link
-    $('.signature-new').click(function(){
-        $('#dialog').dialog('open');
-        return false;
-    });
+// Dialog Link
+//    $('.signature-new').click(function(){
+//        $('#dialog').dialog('open');
+//        return false;
+//    });
 
 //    //hover states on the static widgets
 //    $('#dialog_link, ul#icons li').hover(
