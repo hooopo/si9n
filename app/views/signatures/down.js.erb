@@ -1,0 +1,5 @@
+<% if @signature.errors.any? %>
+  alert("<%= escape_javascript(@signature.errors.map{|x| x.last}.join("\n")) %>");
+<% else %>
+  alert("ok");
+<% end %>

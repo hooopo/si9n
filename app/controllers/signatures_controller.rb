@@ -15,6 +15,14 @@ class SignaturesController < ApplicationController
     end
   end
 
+  def down
+    @signature = Signature.find(params[:id])
+    @signature.increment!(:down)
+    respond_to do |format|
+      format.js
+    end
+  end
+
 
   def index
     @signatures = Signature.order("(up - down) DESC").limit(10)
