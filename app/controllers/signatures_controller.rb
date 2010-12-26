@@ -9,7 +9,7 @@ class SignaturesController < ApplicationController
 
   def up
     @signature = Signature.find(params[:id])
-    @signature.increment!(:up)
+    @signature.up!
     respond_to do |format|
       format.js
     end

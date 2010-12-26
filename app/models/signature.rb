@@ -6,4 +6,14 @@ class Signature < ActiveRecord::Base
     self.order("RAND()").first
   end
 
+  def up!
+    self.up = self.up + 1
+    self.save
+  end
+
+  def down!
+    self.down = self.down + 1
+    self.save
+  end
+
 end
