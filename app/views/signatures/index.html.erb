@@ -1,25 +1,11 @@
-<h1>Listing signatures</h1>
-
-<table>
-  <tr>
-    <th>Body</th>
-    <th>Rank</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @signatures.each do |signature| %>
-  <tr>
-    <td><%= signature.body %></td>
-    <td><%= signature.rank %></td>
-    <td><%= link_to 'Show', signature %></td>
-    <td><%= link_to 'Edit', edit_signature_path(signature) %></td>
-    <td><%= link_to 'Destroy', signature, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
+<h1>最受欢迎的签名</h1>
+<ul>
+  <% @signatures.all.each do |s| %>
+    <li><%= s.id %>:<%= s.body %>----> <%= s.up - s.down %></li>
+  <% end %>
+</ul>
 <br />
 
-<%= link_to 'New Signature', new_signature_path %>
+<div id="op">
+  <span><%= link_to "添加", new_signature_path, :remote => true %></span>
+</div>

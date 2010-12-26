@@ -16,19 +16,11 @@ class SignaturesController < ApplicationController
   end
 
 
-  #  # GET /signatures
-  #  # GET /signatures.xml
-  #  def index
-  #    @signatures = Signature.all
-  #
-  #    respond_to do |format|
-  #      format.html # index.html.erb
-  #      format.xml  { render :xml => @signatures }
-  #    end
-  #  end
-  #
-  #  # GET /signatures/1
-  #  # GET /signatures/1.xml
+  def index
+    @signatures = Signature.order("(up - down) DESC").limit(10)
+    respond_with(@signature)
+  end
+
   def show
     @signature = Signature.find(params[:id])
     respond_with(@signature)
