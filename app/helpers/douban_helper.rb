@@ -4,17 +4,13 @@ module DoubanHelper
     @douban ||= begin
       cookies_json = cookies.signed[:douban]
       if cookies_json
-        cookies_hash = JSON.parse(cookies_json)
+        p cookies_json
+        cookies_hash = ActiveSupport::JSON.decode(cookies_json)
         cookies_hash = Hash[cookies_hash.map{|k,v|[k.to_sym, v]}]
         @douban = Douban.load(cookies_hash)
       end
     end
-    #    @douban ||= begin
-    #      cookies_json = cookies.signed[:douban]
-    #      if cookies_json
-    #        @douban = Douban.load(JSON.parse(cookies_json))
-    #      end
-    #    end
+
   end
   
   def douban_authorized?

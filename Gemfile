@@ -5,7 +5,8 @@ gem 'mysql2'
 gem 'douban'
 gem 'unicorn'
 gem 'nokogiri'
-gem 'json'
+gem 'yajl-ruby'
+#gem 'json'
 gem 'thin'
 gem "jquery-rails"
 
