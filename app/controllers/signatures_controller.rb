@@ -3,9 +3,9 @@ class SignaturesController < ApplicationController
   respond_to :html, :js, :except => [:create, :up, :down]
 
   def random
-    p douban.search_books("http")
-    p douban.get("/people/xiaohaibai")
-    p douban.get("/people/%40me")
+#    p douban.search_books("http")
+#    p douban.get("/people/xiaohaibai")
+#    p douban.get("/people/%40me")
     @signature = Signature.random
     respond_with(@signature)
   end
