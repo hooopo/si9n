@@ -4,7 +4,6 @@ module DoubanHelper
     @douban ||= begin
       cookies_json = cookies.signed[:douban]
       if cookies_json
-        p cookies_json
         cookies_hash = ActiveSupport::JSON.decode(cookies_json)
         cookies_hash = Hash[cookies_hash.map{|k,v|[k.to_sym, v]}]
         @douban = Douban.load(cookies_hash)

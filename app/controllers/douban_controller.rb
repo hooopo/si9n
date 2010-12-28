@@ -19,14 +19,9 @@ class DoubanController < ApplicationController
       cookies.permanent.signed[:douban] = douban.dump.try(:to_json)
       resp = douban.get("/people/%40me")
       if resp.message == "OK"
-        xml = resp.body
-        user_info = ActiveSupport::XmlMini.parse(xml)
-        
-        user_info = user_info["entry"]
-        User.create :location => user_info["location"]["id"],
-          :uid => user_info["uid"]["__content__"],
-          :content => user_info["content"]["__content__"],
-          :link => user_info["link"].find{|link| link["rel"] == "alternate"}["href"]
+        @current_user = User.create_from_xml(ActiveSupport::XmlMini.parse(resp.body))
+        session[:user_id] = @current_user.id
+        cookies.permanent.signed[:user_id] = @current_user.id
       end
 
     end
