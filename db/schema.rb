@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101223135154) do
+ActiveRecord::Schema.define(:version => 20101228165122) do
 
   create_table "signatures", :force => true do |t|
     t.text     "body"
@@ -29,6 +29,11 @@ ActiveRecord::Schema.define(:version => 20101223135154) do
     t.string   "link"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "icon"
+    t.string   "location_name"
+    t.string   "title"
+    t.string   "homepage"
+    t.string   "signature"
   end
 
 end
