@@ -1,7 +1,7 @@
 Bookshare::Application.routes.draw do
   
 
-  get "home/index"
+  #get "home/index"
 
   # Routes for Douban OAuth
   scope "/douban" do
@@ -16,7 +16,6 @@ Bookshare::Application.routes.draw do
   resources :signatures do
     member do
       post :up
-      post :down
       post :syn
     end
   end

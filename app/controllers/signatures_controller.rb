@@ -2,7 +2,7 @@ class SignaturesController < ApplicationController
 
   before_filter :douban_auth_required, :only => [:syn, :up, :create]
 
-  respond_to :html, :js, :except => [:create, :up, :down]
+  respond_to :html, :js, :except => [:create, :up]
 
   def syn
     @signature = Signature.find(params[:id])

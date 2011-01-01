@@ -6,6 +6,7 @@ gem 'douban'
 gem 'unicorn'
 gem 'nokogiri'
 gem 'yajl-ruby'
+gem 'memcache-client'
 #gem 'json'
 gem 'thin'
 gem "jquery-rails"
