@@ -1,7 +1,7 @@
 <h1>最受欢迎的签名</h1>
 <ul>
   <% @signatures.all.each do |s| %>
-    <li><%= s.id %>:<%= s.body %>----> <%= s.up - s.down %></li>
+    <li><%= s.id %>:<%= s.body %>----> <%= s.up  %></li>
   <% end %>
 </ul>
 <br />

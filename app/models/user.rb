@@ -23,8 +23,6 @@ class User < ActiveRecord::Base
   
   def self.create_from_xml(info)
     info = info["entry"]
-    require 'pp'
-    pp info
     User.find_or_create_by_uid(info["uid"]["__content__"],
       #:location       => info["location"]["id"],
       #:location_name  => info["location"]["__content__"],

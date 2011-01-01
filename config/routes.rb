@@ -10,7 +10,7 @@ Bookshare::Application.routes.draw do
     match '/logout' => 'douban#destroy',    :as => :douban_logout
   end
 
-  root :to => "home#index"
+  root :to => "signatures#random"
   match "book/search" => "book#search"
   match "signatures/random" => "signatures#random"
   resources :signatures do
