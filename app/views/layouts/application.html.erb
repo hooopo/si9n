@@ -13,14 +13,14 @@
     <%= csrf_meta_tag %>
   </head>
   <body>
-    
+
     <% if douban_authorized? %>
-      <%= link_to 'Logout From Douban', douban_logout_path %>
+      <%= link_to '登出', douban_logout_path %>
       <% if current_user %>
-        欢迎<%=link_to(current_user.title, current_user.link) %><%=image_tag(current_user.icon)%>
+        欢迎<%=link_to(current_user.title, current_user.link) %>
       <% end %>
     <% else %>
-      <%= link_to "Login with douban", douban_login_path %>
+      <%= link_to(image_tag("douban_button.gif"), douban_login_path) %>
     <% end %>
 
 
