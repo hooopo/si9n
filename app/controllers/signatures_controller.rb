@@ -1,6 +1,14 @@
 class SignaturesController < ApplicationController
 
+  before_filter :douban_auth_required, :only => [:syn, :up, :create]
+
   respond_to :html, :js, :except => [:create, :up, :down]
+
+  def syn
+    @signature = Signature.find(params[:id])
+    douban.miniblog(@signature.body_merge_url(:url => signature_url(@signature)))
+    render :js => "alert('同步成功！');"
+  end
 
   def random
     @signature = Signature.random

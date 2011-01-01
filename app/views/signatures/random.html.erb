@@ -4,8 +4,8 @@
 <div id="op">
   <span><%= link_to "刷新", signatures_random_path, :remote => true %></span>
   <span><%= link_to "添加", new_signature_path, :remote => true %></span>
-  <span><%= link_to "给力", up_signature_path(@signature), :remote => true %></span>
-  <span><%= link_to "不给力", down_signature_path(@signature), :remote => true %></span>
+  <span><%= link_to "喜欢", up_signature_path(@signature), :remote => true, :method => :post %></span>
+  <span><%= link_to "同步到广播", syn_signature_path(@signature), :remote => true, :method => :post %></span>
 
 </div>
 

@@ -15,8 +15,9 @@ Bookshare::Application.routes.draw do
   match "signatures/random" => "signatures#random"
   resources :signatures do
     member do
-      get :up
+      post :up
       post :down
+      post :syn
     end
   end
 
