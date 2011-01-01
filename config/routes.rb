@@ -1,7 +1,6 @@
 Bookshare::Application.routes.draw do
   
 
-  #get "home/index"
 
   # Routes for Douban OAuth
   scope "/douban" do

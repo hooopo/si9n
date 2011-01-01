@@ -1,1 +1,3 @@
-$("#signature-body").html("<%= @signature.id %>:<%= @signature.body %>")
+$("#signature-body").html("<%= @signature.id %>:<%= @signature.body %>");
+$('#up a').attr('href', "<%= up_signature_path(@signature) %>");
+$('#syn a').attr('href', "<%= syn_signature_path(@signature) %>");
