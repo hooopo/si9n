@@ -22,7 +22,14 @@
     <% else %>
       <%= link_to(image_tag("douban_button.gif"), douban_login_path) %>
     <% end %>
-
+    <ul>
+      <li>
+        <%= link_to_unless_current "随便看看", signatures_random_path %>
+      </li>
+      <li>
+        <%= link_to_unless_current "排行榜", signatures_path %>
+      </li>
+    </ul>
 
     <div id="flash_notice" style="display:none"></div>
     <%= yield %>
