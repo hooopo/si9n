@@ -10,7 +10,7 @@ Bookshare::Application.routes.draw do
   end
 
   root :to => "signatures#random"
-  match "book/search" => "book#search"
+  
   match "signatures/random" => "signatures#random"
   resources :signatures do
     member do

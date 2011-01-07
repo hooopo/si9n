@@ -5,7 +5,7 @@ class Signature < ActiveRecord::Base
   validates :body, :presence => true, :uniqueness => true, :length => { :maximum => MAX_BODY_SIZE }
 
   def self.random
-    self.order("RAND()").first
+    self.all.sample
   end
 
   def up!
