@@ -1,4 +1,9 @@
 class User < ActiveRecord::Base
+
+
+  validates_presence_of :title
+  validates_presence_of :uid
+ 
   
   #  {"entry"=>
   #      {"uri"=>{"__content__"=>"http://api.douban.com/people/26793699"},
@@ -24,12 +29,13 @@ class User < ActiveRecord::Base
   def self.create_from_xml(info)
     info = info["entry"]
     User.find_or_create_by_uid(info["uid"]["__content__"],
-      #:location       => info["location"]["id"],
-      #:location_name  => info["location"]["__content__"],
+      # #:location       => info["location"]["id"], #:location_name  =>
+      # info["location"]["__content__"],
       :content        => info["content"]["__content__"],
       :link           => info["link"].find{|link| link["rel"] == "alternate"}["href"],
       :icon           => info["link"].find{|link| link["rel"] == "icon"}["href"],
-      #:homepage       => info["link"].find{|link| link["rel"] == "homepage"}["href"],
+      # #:homepage       => info["link"].find{|link| link["rel"] ==
+      # "homepage"}["href"],
       :signature      => info["signature"]["__content__"],
       :title          => info["title"]["__content__"]
     )

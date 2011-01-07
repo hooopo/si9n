@@ -1,0 +1,10 @@
+<% if target.errors.any? %>
+  <div id="errorExplanation">
+    <h2>有<%= target.errors.count %>个错误，导致记录没有保存成功:</h2>
+    <ul>
+      <% target.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
