@@ -12,6 +12,7 @@ class Signature < ActiveRecord::Base
     self.up = self.up + 1
     self.save
   end
+
   
 
   def body_merge_url(options = {})

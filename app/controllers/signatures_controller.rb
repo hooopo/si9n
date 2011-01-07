@@ -17,10 +17,14 @@ class SignaturesController < ApplicationController
 
   def up
     @signature = Signature.find(params[:id])
-    @signature.up!
-    respond_to do |format|
-      format.js
+
+    if Rails.cache.read(current_user.build_cache_key(@signature))
+      render :js => "alert('已经收藏过')"
+    else
+      current_user.up(@signature)
+      render :js => "alert('收藏成功')"
     end
+
   end
 
 

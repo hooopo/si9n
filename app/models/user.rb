@@ -3,6 +3,15 @@ class User < ActiveRecord::Base
 
   validates_presence_of :title
   validates_presence_of :uid
+
+  def up(signature)
+    signature.up!
+    Rails.cache.write(build_cache_key(signature), true, :expires_in => Config::USER_UP_DELAY)
+  end
+
+  def build_cache_key(signature)
+    [self.id, signature.id].join("_")
+  end
  
   
   #  {"entry"=>
