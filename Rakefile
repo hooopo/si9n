@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Bookshare::Application.load_tasks
+Si9n::Application.load_tasks

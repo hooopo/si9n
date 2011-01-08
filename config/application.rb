@@ -6,7 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 
-module Bookshare
+module Si9n
   class Application < Rails::Application
     config.secret_token= "11111111111111"
     # #ActionController::Base.cookie_verifier_secret = "i have a dream that is
