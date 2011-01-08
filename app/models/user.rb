@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
 
   def up(signature)
     signature.up!
+    Favorite.create!(:signature_id => signature.id, :user_id => self.id) unless self.favorites.where(:signature_id => signature.id).first
     Rails.cache.write(build_cache_key(signature), true, :expires_in => Config::USER_UP_DELAY)
   end
 
