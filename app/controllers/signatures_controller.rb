@@ -44,7 +44,7 @@ class SignaturesController < ApplicationController
   end
 
   def create
-    @signature = Signature.new(params[:signature])
+    @signature = Signature.new(params[:signature].merge(:user_id => current_user.id))
     #flash[:notice] = "添加成功！" if @signature.save
     respond_to do |format|
       if @signature.save
