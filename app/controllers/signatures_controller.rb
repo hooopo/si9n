@@ -24,7 +24,6 @@ class SignaturesController < ApplicationController
       current_user.up(@signature)
       render :js => "alert('收藏成功')"
     end
-
   end
 
 
@@ -56,5 +55,4 @@ class SignaturesController < ApplicationController
       end
     end
   end
-
 end

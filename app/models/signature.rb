@@ -15,8 +15,6 @@ class Signature < ActiveRecord::Base
     self.save
   end
 
-  
-
   def body_merge_url(options = {})
     options = {:size => 128, :split => " via:"}.merge(options)
     size_left = options[:size] - options[:split].size - options[:url].size
@@ -28,9 +26,5 @@ class Signature < ActiveRecord::Base
     else
       self.body + options[:split] + options[:url]
     end
-
-    
   end
- 
-
 end
