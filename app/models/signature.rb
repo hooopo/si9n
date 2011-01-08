@@ -1,5 +1,7 @@
 class Signature < ActiveRecord::Base
 
+  belongs_to :user
+
   MAX_BODY_SIZE = 203
 
   validates :body, :presence => true, :uniqueness => true, :length => { :maximum => MAX_BODY_SIZE }
