@@ -1,6 +1,10 @@
-<%#
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
-%>
-
-<%= "favorites.html" %>
+<h1>我搜藏的语录</h1>
+<% if @signatures.present?  %>
+  <ul>
+    <% @signatures.each do |signature| %>
+      <li>
+        <%= signature.id %>.<%= signature.body %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

@@ -20,9 +20,9 @@ Si9n::Application.routes.draw do
   end
 
   scope "/mine" do
-    match "/favorites" => "mine#favorites"
-    match "/signatures" => "mine#signatures"
-    match "/settings" => "mine#settings"
+    match "/favorites"  => "mine#favorites",  :as => :my_favorites
+    match "/signatures" => "mine#signatures", :as => :my_signatures
+    match "/settings"   => "mine#settings",   :as => :my_settings
   end
 
   # The priority is based upon order of creation: first created -> highest
