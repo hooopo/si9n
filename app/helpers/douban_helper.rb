@@ -17,7 +17,13 @@ module DoubanHelper
   end
   
   def douban_auth_required
-    douban_authorized? || redirect_to(douban_login_path)
+    unless douban_authorized?
+      if request.xhr?
+        render :js => "document.location.href='#{douban_login_path}'"
+      else
+        redirect_to(douban_login_path)
+      end
+    end
   end
   
   def douban_auth_or_login_required
