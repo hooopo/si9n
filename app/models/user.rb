@@ -4,8 +4,12 @@ class User < ActiveRecord::Base
   has_many :favorites
   has_many :favorite_signatures, :through => :favorites, :source => "signature"
 
+  belongs_to :setting
+
   validates_presence_of :title
   validates_presence_of :uid
+
+  before_create :init_setting
 
   def up(signature)
     signature.up!
@@ -27,5 +31,11 @@ class User < ActiveRecord::Base
       :title          => info["title"]["__content__"]
     )
   end
+  
+  def init_setting
+    self.setting = Setting.create!
+  end
+
+
 
 end
