@@ -1,0 +1,16 @@
+<ol>
+  <li>
+    <%= link_to_unless_current("我的收藏", my_favorites_path) %>
+  </li>
+
+  <li>
+    <%= link_to_unless_current("我的设置", my_settings_path) %>
+  </li>
+
+  <li>
+    <%= link_to_unless_current("我的语录", my_signatures_path) %>
+  </li>
+</ol>
+<%= yield %>
+
+<%= parent_layout 'application' %>
