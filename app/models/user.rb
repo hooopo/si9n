@@ -36,6 +36,18 @@ class User < ActiveRecord::Base
     self.setting = Setting.create!
   end
 
+  def random_signature
+    case Setting::RANDOM_MODE_NAMES[self.setting.random_mode]
+    when :all
+      Signature.all.sample
+    when :hotest_100
+      Signature.order("up DESC").limit(100).sample
+    when :latest_100
+      Signature.order("created_at DESC").limit(100).sample
+    end
+
+  end
+
 
 
 end

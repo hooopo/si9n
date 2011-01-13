@@ -6,6 +6,10 @@ class Setting < ActiveRecord::Base
     1 => "从最新100条随机",
     2 => "从最热100条随机"
   }
-
+  RANDOM_MODE_NAMES = {
+    0 => :all,
+    1 => :latest_100,
+    2 => :hotest_100
+  }
 
 end
