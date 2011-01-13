@@ -34,6 +34,8 @@ class DoubanController < ApplicationController
     return unless douban_authorized?
     session[:douban] = nil
     cookies[:douban] = nil
+    session[:user_id] = nil
+    cookies[:user_id] = nil
     douban.destroy
     redirect_to '/'
   end

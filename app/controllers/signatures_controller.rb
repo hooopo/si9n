@@ -8,11 +8,17 @@ class SignaturesController < ApplicationController
     @signature = Signature.find(params[:id])
     douban.miniblog(@signature.body_merge_url(:url => signature_url(@signature)))
     current_user.up(@signature) unless Rails.cache.read(current_user.build_cache_key(@signature))
+    
     render :js => "alert('同步成功！');"
   end
 
   def random
-    @signature = Signature.random
+    if current_user
+      @signature = current_user.random_signature
+    else
+      @signature = Signature.random
+    end
+ 
     respond_with(@signature)
   end
 
@@ -45,7 +51,7 @@ class SignaturesController < ApplicationController
 
   def create
     @signature = Signature.new(params[:signature].merge(:user_id => current_user.id))
-    # #flash[:notice] = "添加成功！" if @signature.save
+    
     respond_to do |format|
       if @signature.save
         format.html { redirect_to(@signature, :notice => '添加成功！') }
