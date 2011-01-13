@@ -7,8 +7,5 @@ class Setting < ActiveRecord::Base
     2 => "从最热100条随机"
   }
 
-  REMEMBER_ME = {
-    true => ""
-  }
 
 end
