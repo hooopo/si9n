@@ -1,9 +1,15 @@
-<%= form_for(:setting, @setting, :html => {:method => :put}, :url => edit_my_settings_path) do |f| %>
+<%= form_for(@setting, :html => {:method => :put}, :url => edit_my_settings_path) do |f| %>
   <%= render :partial => "/shared/error_messages", :locals => {:target => @setting} %>
 
   <div class="field">
     <%= f.label :random_mode, "选择随机模式" %>
     <%= f.select :random_mode, options_for_select(Setting::RANDOM_MODE.invert, @setting.random_mode) %>
+
+  </div>
+  <div class="field">
+    <%= f.label :remember_me, "记住登录状态" %>
+    <%= f.check_box :remember_me %>
+
   </div>
 
   <div class="actions">

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110112165031) do
+ActiveRecord::Schema.define(:version => 20110113143604) do
 
   create_table "favorites", :force => true do |t|
     t.integer "user_id"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20110112165031) do
 
   create_table "settings", :force => true do |t|
     t.integer "random_mode", :default => 0
+    t.boolean "remember_me", :default => true
   end
 
   create_table "signatures", :force => true do |t|
