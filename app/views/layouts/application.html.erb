@@ -9,33 +9,41 @@
     <%= javascript_include_tag :defaults %>
     <%= stylesheet_link_tag "jquery-ui/ui-lightness/jquery-ui-1.8.7.custom" %>
     <%= javascript_include_tag "new-signature-dialog" %>
-
+    <%= stylesheet_link_tag "base" %>
     <%= csrf_meta_tag %>
   </head>
   <body>
+    <div style="margin-bottom: 0pt;" id="header">
+      <div class="container">
+        <h1 id="logo"></h1>
+        <div id="navigation">
+          <ul id="menu" class="ui-tabs-nav menu">
+            <%= link_to_with_class "随便看看", signatures_random_path %>
+            <%= link_to_with_class "排行榜", signatures_path %>
+            <% if current_user %>
+              <%= link_to_with_class "我的语录", my_signatures_path %>
+            <% end %>
+          </ul>
+        </div>
+        <div id="quick-search">
+          <div class="no-login">
 
-    <% if douban_authorized? %>
-      <%= link_to '登出', douban_logout_path %>
-      <% if current_user %>
-        欢迎<%=link_to(current_user.title, current_user.link) %>
-      <% end %>
-    <% else %>
-      <%= link_to(image_tag("douban_button.gif"), douban_login_path) %>
-    <% end %>
-    <ul>
-      <li>
-        <%= link_to_unless_current "随便看看", signatures_random_path %>
-      </li>
-      <li>
-        <%= link_to_unless_current "排行榜", signatures_path %>
-      </li>
-      <li>
-        <%= link_to_unless_current "我的语录", my_signatures_path %>
-      </li>
-    </ul>
+            <% if douban_authorized? %>
+              <%= link_to '登出', douban_logout_path %>
+              <% if current_user %>
+                欢迎<%=link_to(current_user.title, current_user.link) %>
+              <% end %>
+            <% else %>
+              <%= link_to(image_tag("douban_button.gif"), douban_login_path) %>
+            <% end %>
 
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="flash_notice" style="display:none"></div>
-    <%= yield %>
-
+    <div id="context" >
+      <%= yield %>
+    </div>
   </body>
 </html>

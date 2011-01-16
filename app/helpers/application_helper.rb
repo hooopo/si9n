@@ -13,5 +13,13 @@ module ApplicationHelper
     @_content_for[:layout] = self.output_buffer
     self.output_buffer = render(:file => "layouts/#{layout}")
   end
+
+  def link_to_with_class(*args)
+    if current_page?(args[1])
+      %Q!<li class='current ui-tabs-selected'><span>#{link_to(*args)}</span></li>!.html_safe
+    else
+      %Q!<li><span>#{link_to(*args)}</span></li>!.html_safe
+    end
+  end
   
 end
