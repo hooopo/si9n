@@ -15,7 +15,7 @@ module ApplicationHelper
   end
 
   def link_to_with_class(*args)
-    if current_page?(args[1])
+    if current_page?(args[1]) || (request.path =~ /mine/ && args[1] =~ /mine/ )
       %Q!<li class='current ui-tabs-selected'><span>#{link_to(*args)}</span></li>!.html_safe
     else
       %Q!<li><span>#{link_to(*args)}</span></li>!.html_safe
