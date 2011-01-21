@@ -78,4 +78,88 @@ div#header div.container{width:960px;zoom:1;margin:0 auto;}
 
 div#context{
     margin-top:16pt;
+    margin-left:200px;
+    margin-right:auto;
+
 }
+
+
+.outer_box{
+    width:680px;
+    height:auto;
+    margin-bottom:10px;
+}
+.block_top{
+    height:42px;
+    overflow:hidden
+}
+.block_top .block_line{
+    border-right:solid 1px #d8d8d8;
+    height:37px;
+    margin-top:5px;
+    float:left
+}
+.block_top .block_title{
+    background:url(/images/titlebg_28.png) no-repeat;
+    width:678px;
+    height:42px;
+    padding-left:1px;
+    overflow:hidden;
+    float:left
+}
+.block_top .block_title .block_right_link {
+    float:right;
+    height:38px;
+    line-height:38px;
+    padding-right:5px
+}
+.block_top .block_title .block_right_link a {
+    color:#825C23
+}
+.block_top .block_titleleft{ width:27px;
+    height:42px;
+    float:left
+}
+
+.outer_box .block_titleleft{
+    background:url(/images/titlebg_green.png) no-repeat scroll 0px 0px
+}
+
+.block_top .block_titlecenter{
+    height:42px;
+    float:left;
+    font-size:14px;
+    line-height:35px;
+    font-weight:bold;
+    color:#fff
+}
+
+.outer_box .block_titlecenter{
+    background:url(/images/titlebg_green_65.png) repeat-x
+}
+
+.block_top .block_titleright{
+    width:27px;
+    height:42px;
+    float:left
+}
+
+.outer_box .block_titleright{
+    background:url(/images/titlebg_green.png) no-repeat scroll right 0px
+}
+
+.body_box{
+    height:auto;
+    padding:10px;
+    border-style:solid;
+    border-width:0px 1px 1px;
+    border-color:#d8d8d8; 
+    overflow:hidden
+}
+
+h1 {
+    line-height:28px;
+    margin-bottom:10px;
+}
+
+

@@ -1,7 +1,22 @@
-<h1>最受欢迎的签名</h1>
+
+<h1>最受欢迎的语录</h1>
 <ul>
   <% @signatures.all.each do |s| %>
-    <li><%= s.id %>:<%= s.body %>----> <%= s.up  %></li>
+    <div class="outer_box">
+      <div class="block_top">
+        <div class="block_title">
+          <div class="block_titleleft"></div>
+          <div class="block_titlecenter">推荐指数：<%= s.up  %></div>
+          <div class="block_titleright"></div>
+        </div>
+        <div class="block_line"></div>
+      </div>
+      <div class="body_box">
+        <span class="category_item">
+          <%= s.body %>
+        </span>
+      </div>
+    </div>
   <% end %>
 </ul>
 <br />
@@ -14,3 +29,7 @@
 <div id="dialog" title="添加签名">
   <p>添加签名</p>
 </div>
+
+
+
+
