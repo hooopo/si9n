@@ -31,6 +31,7 @@ div#quick-search input.q{background:none repeat scroll 0 0 transparent;border:me
 
 div#header div.container{width:960px;zoom:1;margin:0 auto;}
 
+/* 导航 */
 #navigation {
     display: inline;
     float: left;
@@ -76,6 +77,7 @@ div#header div.container{width:960px;zoom:1;margin:0 auto;}
     text-decoration: none;
 }
 
+/* 主体内容 */
 div#context{
     margin-top:16pt;
     margin-left:200px;
@@ -83,7 +85,7 @@ div#context{
 
 }
 
-
+/* 单条语录外围DIV */
 .outer_box{
     width:680px;
     height:auto;
