@@ -168,9 +168,10 @@ h1 {
 
 /* 按钮栏 */ 
 #op {width: 680px; background:#EEEEEE; border:1px solid #BDBDBD;}
-#op .inner {padding: 8px;} 
-#op a { color: #3a81c0;}     
-#op a:hover {color:#FFF;}
+#op .inner {padding: 10px;}
+#op .inner span{ border:1px solid #2D6EA8; padding:6px; background:#74A4CF; margin-right:4px; -moz-border-radius: 5px 5px 5px 5px;} 
+#op a { color: #FFF; text-decoration:none;}     
+#op a:hover { font-weight: bold; background: #74A4CF;}
 
 /* 二级tab */
 .tabs {
@@ -223,7 +224,8 @@ h1 {
   border: 1px solid #2D6EA8;
   background: #1D629F;
   float:left;display: block;
-  border-bottom: none;
+  border-bottom: none; 
+  -moz-border-radius: 5px 5px 0px 0px;
 } 
 #top_op a:hover{ text-decoration:underline;}
 
