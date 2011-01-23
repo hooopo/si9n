@@ -165,3 +165,9 @@ h1 {
 }
 
 
+/* 按钮栏 */ 
+#op {width: 680px; background:#EEEEEE; border:1px solid #BDBDBD;}
+#op .inner {padding: 8px;} 
+#op a { color: #3a81c0;}     
+#op a:hover {color:#FFF;}
+
