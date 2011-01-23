@@ -1,0 +1,7 @@
+zh-CN:
+  activerecord:
+    models:
+      signature: 语录
+    attributes:
+      signature:
+        body: 内容
