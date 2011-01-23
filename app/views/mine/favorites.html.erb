@@ -3,9 +3,21 @@
 <% if @signatures.present?  %>
   <ul>
     <% @signatures.each do |signature| %>
-      <li>
-        <%= signature.id %>.<%= signature.body %>
-      </li>
+    <div class="outer_box">
+      <div class="block_top">
+        <div class="block_title">
+          <div class="block_titleleft"></div>
+          <div class="block_titlecenter">推荐指数：<%= signature.up  %></div>
+          <div class="block_titleright"></div>
+        </div>
+        <div class="block_line"></div>
+      </div>
+      <div class="body_box">
+        <span class="category_item">
+          <%= signature.body %>
+        </span>
+      </div>
+    </div>
     <% end %>
   </ul>
 <% end %>
