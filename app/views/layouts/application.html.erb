@@ -29,9 +29,10 @@
           <div class="no-login">
 
             <% if douban_authorized? %>
-              <%= link_to '登出', douban_logout_path %>
+              <%= link_to '登出', douban_logout_path %> &nbsp;&nbsp;
               <% if current_user %>
-                欢迎<%=link_to(current_user.title, current_user.link) %>
+                欢迎 <%=link_to(current_user.title, current_user.link) %>
+                <%= image_tag(current_user.avatar_url, :width => 25, :height => 25, :style => "vertical-align: middle;") unless current_user.avatar_url.blank? %>
               <% end %>
             <% else %>
               <%= link_to(image_tag("douban_button.gif"), douban_login_path) %>

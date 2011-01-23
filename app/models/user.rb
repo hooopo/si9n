@@ -48,6 +48,10 @@ class User < ActiveRecord::Base
     end
 
   end
+  
+  def avatar_url
+    self.icon
+  end
 
 
 
