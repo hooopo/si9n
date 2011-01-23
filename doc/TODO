@@ -5,3 +5,4 @@
 5.添加GA
 6.对signature#show页面进行访问限制，referer的domain只能为douban.com
 7.rss订阅 排行榜（一周最热，一年最热，本月最热）以后再说
+8.添加时是否同步到豆瓣广播功能
