@@ -10,7 +10,7 @@ class SignaturesController < ApplicationController
     douban.miniblog(@signature.body_merge_url(:url => signature_url(@signature)))
     current_user.up(@signature) unless Rails.cache.read(current_user.build_cache_key(@signature))
     
-    render :js => "alert('同步成功！');"
+    render :js => "$.jGrowl('同步成功！');"
   end
 
   def random
@@ -27,10 +27,10 @@ class SignaturesController < ApplicationController
     @signature = Signature.find(params[:id])
 
     if Rails.cache.read(current_user.build_cache_key(@signature))
-      render :js => "alert('已经收藏过')"
+      render :js => "$.jGrowl('已经收藏过！');"
     else
       current_user.up(@signature)
-      render :js => "alert('收藏成功')"
+      render :js => "$.jGrowl('收藏成功！');"
     end
   end
 
