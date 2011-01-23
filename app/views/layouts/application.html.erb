@@ -16,7 +16,7 @@
   <body>
     <div style="margin-bottom: 0pt;" id="header">
       <div class="container">
-        <h1 id="logo"><%= image_tag "logo.gif" %></h1>
+        <h1 id="logo"><%= link_to(image_tag("logo.gif"), "/") %></h1>
         <div id="navigation">
           <ul id="menu" class="ui-tabs-nav menu">
             <%= link_to_with_class "随便看看", signatures_random_path %>
