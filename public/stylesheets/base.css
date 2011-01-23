@@ -171,3 +171,42 @@ h1 {
 #op a { color: #3a81c0;}     
 #op a:hover {color:#FFF;}
 
+/* 二级tab */
+.tabs {
+  position: relative; 
+  height: 2.6em;
+  margin-bottom:20px; 
+  overflow: hidden;  
+}
+
+.tabs ul {            
+  width:680px; 
+  position: absolute;
+  margin: 0; 
+  bottom: 0;
+  padding: 0em;
+  padding-left:50px;
+  border-bottom: 1px solid #3A81C0; 
+ }
+
+.tabs li { 
+  background: none repeat scroll 0 0 #FFFFFF;
+  float: left;
+  margin-right: 8px;
+ }  
+ 
+.tabs li a{ 
+  display: block;
+  padding: 4px 6px;    
+  color: #2D6EA8;
+  text-decoration: none;  
+  border-color: #3A81C0;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom: none;  
+  background: #CFE0FF;
+}
+  
+/* highlight for current user mine item */
+.tabs li.selected a{ background :#4D95CF; color: #FFF; }
+

@@ -1,16 +1,11 @@
-<ol>
-  <li>
-    <%= link_to_unless_current("我的收藏", my_favorites_path) %>
-  </li>
+<div class="tabs" >
+  <ul>
+    <li <%= current_class_for_mine('favorites') %> ><%= link_to("我的收藏", my_favorites_path) %></li>
+    <li <%= current_class_for_mine('settings') %> ><%= link_to("我的设置", my_settings_path) %></li>
+    <li <%= current_class_for_mine('signatures') %> ><%= link_to("我的语录", my_signatures_path) %></li>
+  </ul>           
+</div>             
 
-  <li>
-    <%= link_to_unless_current("我的设置", my_settings_path) %>
-  </li>
-
-  <li>
-    <%= link_to_unless_current("我的语录", my_signatures_path) %>
-  </li>
-</ol>
 <%= yield %>
 
 <%= parent_layout 'application' %>
