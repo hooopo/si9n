@@ -1,8 +1,0 @@
-<% if @signature.errors.any? -%>
-  $("#flash_notice").html("<%= escape_javascript(@signature.errors.map{|e| e.last}.join("\n"))%>").show();
-  $("#flash_notice").hide(1500);
-<% else -%>
-  $("#flash_notice").html("添加成功！").show();
-  $("#flash_notice").hide(1500);
-  $("#dialog").dialog('close');
-<% end -%>
