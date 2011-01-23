@@ -12,7 +12,7 @@ h3{color:#c51716;font-size:16px;height:22px;line-height:22px;font-weight:400;mar
 h4{margin:5px 0;}
 
 
-#logo{float:left;width:154px;height:33px;overflow:hidden;margin-top:11px;}
+#logo{float:left;width:154px;height:53px;overflow:hidden;margin-top:11px;margin:0;}
 #logo a{display:block;}#logo a:hover{background-position:0 -33px;}
 
 div#header{height:50px;border-bottom:8px solid #2d6ea8;background-color:#3a81c0;width:100%;position:relative;top:0;margin-bottom:30px;}
