@@ -56,7 +56,7 @@ class SignaturesController < ApplicationController
     respond_to do |format|
       if @signature.save
         format.html { redirect_to(@signature, :notice => '添加成功！') }
-        format.js{render :js => "$.jGrowl('添加成功！');"}
+        format.js{render :js => "$.jGrowl('添加成功！');$('#dialog').dialog('close');"}
       else
         format.html { render :action => "new" }
         format.js{render :js => "$.jGrowl('#{@signature.error_text}');"}
