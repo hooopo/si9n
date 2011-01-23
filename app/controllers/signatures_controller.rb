@@ -38,7 +38,8 @@ class SignaturesController < ApplicationController
   def index
     @signatures = Signature.order("up DESC").limit(10)
     respond_to do |format|
-      format.html {render :index}
+      format.html
+      format.rss { render :layout => false}
     end
   end
 

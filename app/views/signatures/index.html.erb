@@ -1,4 +1,5 @@
 <% title "排行榜" %>
+<%= auto_discovery_link_tag(:rss, signatures_path(:format => :rss)) %>
 <h1>最受欢迎的语录</h1>
 <ul>
   <% @signatures.all.each do |s| %>
