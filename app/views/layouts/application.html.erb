@@ -25,6 +25,7 @@
             <% end %>
           </ul>
         </div>
+        
         <div id="quick-search">
           <div class="no-login">
 
@@ -39,7 +40,14 @@
             <% end %>
 
           </div>
+        </div><!-- end: #quick-search -->
+        
+        <div id="top_op">
+          <ul>
+            <li><%= link_to "添加 +", new_signature_path, :remote => true %></li>
+          </ul>
         </div>
+        
       </div>
     </div>
     <div id="flash_notice" style="display:none"></div>

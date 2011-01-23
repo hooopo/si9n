@@ -13,11 +13,12 @@ h4{margin:5px 0;}
 
 
 #logo{float:left;width:154px;height:53px;overflow:hidden;margin-top:11px;margin:0;}
-#logo a{display:block;}#logo a:hover{background-position:0 -33px;}
+#logo a{ display:block;}#logo a:hover{background-position:0 -33px; }
 
 div#header{height:50px;border-bottom:8px solid #2d6ea8;background-color:#3a81c0;width:100%;position:relative;top:0;margin-bottom:30px;}
-div#header a{color:#FFF;text-decoration:none;}
-div#header a:hover{text-decoration:underline;background-color:transparent;}
+#header a {color: #FFF;text-decoration:none;}
+#navigation a{color:#FFF;text-decoration:none;}
+#navigation a:hover{text-decoration:underline;background-color:transparent;}
 
 .no-login{float:left;color:#fff;}
 .no-login{margin-top:2px;}
@@ -211,5 +212,18 @@ h1 {
 .tabs li.selected a{ background :#4D95CF; color: #FFF; }  
 
 /* over-define jquery-ui dialog theme */
-.ui-dialog-titlebar { background: #4D95CF; border: none;}
+.ui-dialog-titlebar { background: #4D95CF; border: none;}   
+
+
+/* top buttons bar */
+#top_op {float: right;margin: 16px 30px 0 28px;} 
+#top_op a {
+  height: 28px;
+  padding: 5px 5px 0px 5px;
+  border: 1px solid #2D6EA8;
+  background: #1D629F;
+  float:left;display: block;
+  border-bottom: none;
+} 
+#top_op a:hover{ text-decoration:underline;}
 
