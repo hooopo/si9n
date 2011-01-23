@@ -1,3 +1,4 @@
+# encoding: utf-8
 Signature.create :body => '唯少闲人如吾两人耳.'
 Signature.create :body => '吾不可去，汝不肯来'
 Signature.create :body => '今日京城有雨，周遭湿冷，瞥见屋中地上还有别人给的泸州老窖一瓶。赶紧电话约人，下午找地儿涮肉爆肚，将丫干掉。'

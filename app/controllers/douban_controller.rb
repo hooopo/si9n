@@ -1,3 +1,4 @@
+# encoding: utf-8
 class DoubanController < ApplicationController
   def new
     douban = Douban.new

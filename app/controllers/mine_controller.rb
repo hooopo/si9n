@@ -1,3 +1,4 @@
+# encoding: utf-8
 class MineController < ApplicationController
 
   before_filter :douban_auth_required

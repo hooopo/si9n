@@ -1,3 +1,4 @@
+# encoding: utf-8
 class SignaturesController < ApplicationController
 
   before_filter :douban_auth_required, :only => [:syn, :up, :create]

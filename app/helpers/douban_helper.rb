@@ -1,3 +1,4 @@
+# encoding: utf-8
 module DoubanHelper
   def douban
     @douban ||= (session[:douban] && session[:douban][:access_token]) ? Douban.load(session[:douban]) : nil
