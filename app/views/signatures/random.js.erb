@@ -1,3 +1,5 @@
-$("#signature-body").html("<%= @signature.id %>:<%= @signature.body %>");
+$("#signature-body").html("<%= escape_javascript(render :partial => "signature_body", :locals => {:signature => @signature}) %>");
+
+
 $('#up a').attr('href', "<%= up_signature_path(@signature) %>");
 $('#syn a').attr('href', "<%= syn_signature_path(@signature) %>");

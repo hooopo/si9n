@@ -1,24 +1,8 @@
 <% title "随便看看" %>
 <br />
-
-
 <div id="signature-body" class="outer_box">
-      <div class="block_top">
-        <div class="block_title">
-          <div class="block_titleleft"></div>
-          <div class="block_titlecenter">推荐指数：<%= @signature.up  %></div>
-          <div class="block_titleright"></div>
-        </div>
-        <div class="block_line"></div>
-      </div>
-      <div class="body_box">
-        <span class="category_item">
-          <%=  @signature.id %>.<%= @signature.body %>
-        </span>
-      </div>
-    </div>
-
-
+  <%= render :partial => "signature_body", :locals => {:signature => @signature} %>
+</div>
 
 <div id="op">
   <div class="inner">
