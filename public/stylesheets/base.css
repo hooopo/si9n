@@ -208,5 +208,8 @@ h1 {
 }
   
 /* highlight for current user mine item */
-.tabs li.selected a{ background :#4D95CF; color: #FFF; }
+.tabs li.selected a{ background :#4D95CF; color: #FFF; }  
+
+/* over-define jquery-ui dialog theme */
+.ui-dialog-titlebar { background: #4D95CF; border: none;}
 
