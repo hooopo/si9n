@@ -1,7 +1,0 @@
-语录推荐系统
-bundle check
-bundle install
-rake db:create:all
-rake db:migrate
-rake db:seed
-rails s thin
