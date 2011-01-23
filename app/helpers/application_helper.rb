@@ -1,5 +1,13 @@
 # encoding: utf-8
-module ApplicationHelper
+module ApplicationHelper 
+  
+  # set the title for the page
+  def title(page_title)
+    content_for(:title) do
+      "#{page_title} - 语录网"
+    end
+  end
+  
   def current_user
     @current_user ||= User.find_by_id(session[:user_id])
     # #重复了？？？
