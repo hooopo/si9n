@@ -1,10 +1,13 @@
-<p id="notice"><%= notice %></p>
+<% title "查看语录" %>
+<br />
+<div id="signature-body" class="outer_box">
+  <%= render :partial => "signature_body", :locals => {:signature => @signature} %>
+</div>
 
-<p>
-  <b>内容:</b>
-  <%= @signature.body %>
-</p>
-
-
-<%#= link_to 'Edit', edit_signature_path(@signature) %>
-<%= link_to '返回', signatures_random_path %>
+<div id="op">
+  <div class="inner">
+    <span><%= link_to "下一个", signatures_random_path, :remote => true %></span>
+    <span id="up"><%= link_to "喜欢", up_signature_path(@signature), :remote => true, :method => :post %></span>
+    <span id="syn"><%= link_to "同步到广播", syn_signature_path(@signature), :remote => true, :method => :post %></span>
+  </div>
+</div>
