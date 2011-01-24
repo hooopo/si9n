@@ -4,7 +4,7 @@
 $(function(){
     $('#dialog').dialog({
         autoOpen: false,
-        width: 540
+        width: 430
     });
 });
 

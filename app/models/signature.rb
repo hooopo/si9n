@@ -28,4 +28,5 @@ class Signature < ActiveRecord::Base
       self.body + options[:split] + options[:url]
     end
   end
+  
 end

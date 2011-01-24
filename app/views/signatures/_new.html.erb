@@ -1,7 +1,10 @@
 <%= form_for(@signature, :remote => true) do |f| %>
   <div class="field">
     <%#= f.label :body, "内容" %><br />
-    <%= f.text_area :body, :size => "60x5" %>
+    <%= f.text_area :body, :style => "width:400px;height:80px" %>
+  </div> 
+  <div class="field">
+    <%= check_box_tag "also_post_at_douban", true, false, { :title => "同时发布到‘豆瓣我说’"} %><label for="also_post_at_douban">同时发布到‘豆瓣我说’</label>
   </div>
   <div class="actions">
     <%= f.submit "添加" %>

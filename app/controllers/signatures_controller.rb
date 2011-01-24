@@ -58,6 +58,13 @@ class SignaturesController < ApplicationController
     
     respond_to do |format|
       if @signature.save
+        if params[:also_post_at_douban] == "true" 
+          begin
+            douban.miniblog(@signature.body_merge_url(:url => signature_url(@signature)))
+          rescue Exception => error
+            Rails.logger.error "创建时同步到豆瓣我说不成功..."
+          end 
+        end
         format.html { redirect_to(@signature, :notice => '添加成功！') }
         format.js{render :js => "$.jGrowl('添加成功！');$('#dialog').dialog('close');"}
       else
