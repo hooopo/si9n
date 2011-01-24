@@ -1,6 +1,6 @@
 <% title "排行榜" %>
 <% content_for :head do %>
-  <%= auto_discovery_link_tag(:rss, signatures_path(:format => :rss)) %>
+  <%= auto_discovery_link_tag(:rss, signatures_path(:format => :rss), :title => "订阅语录排行榜") %>
 <% end %>
 <h1>最受欢迎的语录</h1>
 <ul>
