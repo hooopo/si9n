@@ -11,7 +11,8 @@
     <%= javascript_include_tag "jquery.jgrowl_minimized" %>
 
     <%= csrf_meta_tag %>
-    <link href="<%= url_for("/signatures.rss")%>" rel="alternate" title="RSS" type="application/rss+xml" />    
+    <%= yield(:head) %>
+      
   </head>
   <body>
     <div style="margin-bottom: 0pt;" id="header">
