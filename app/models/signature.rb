@@ -4,6 +4,16 @@ class Signature < ActiveRecord::Base
   belongs_to :user
 
   MAX_BODY_SIZE = 203
+  
+  STATUS = {
+    1 => "正常",
+    0 => "已删除"
+  }
+
+  STATUS_NAMES = {
+    :normal => 1,
+    :deleted => 0
+  }
 
   validates :body, :presence => true, :uniqueness => true, :length => { :maximum => MAX_BODY_SIZE }
 

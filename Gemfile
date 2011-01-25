@@ -10,6 +10,10 @@ gem 'memcache-client'
 #gem 'json'
 gem 'thin'
 gem "jquery-rails"
+#gem 'admin_data', :git => "https://github.com/neerajdotname/admin_data.git"
+
+#gem 'devise' # Devise must be required before RailsAdmin
+#gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

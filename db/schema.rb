@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110113143604) do
+ActiveRecord::Schema.define(:version => 20110125154721) do
 
   create_table "favorites", :force => true do |t|
     t.integer "user_id"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20110113143604) do
     t.integer  "up",         :default => 0
     t.integer  "down",       :default => 0
     t.integer  "user_id"
+    t.integer  "status",     :default => 1
   end
 
   create_table "users", :force => true do |t|

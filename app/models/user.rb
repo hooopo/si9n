@@ -1,6 +1,10 @@
 # encoding: utf-8
 class User < ActiveRecord::Base
 
+
+  # Setup accessible (or protected) attributes for your model
+  attr_accessible :email, :password, :password_confirmation, :remember_me
+
   has_many :signatures
   has_many :favorites
   has_many :favorite_signatures, :through => :favorites, :source => "signature"
