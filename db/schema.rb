@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110125154721) do
+ActiveRecord::Schema.define(:version => 20110126133848) do
 
   create_table "favorites", :force => true do |t|
     t.integer "user_id"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(:version => 20110125154721) do
     t.string   "homepage"
     t.string   "signature"
     t.integer  "setting_id"
+    t.integer  "level",         :default => 0
   end
 
 end

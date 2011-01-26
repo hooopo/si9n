@@ -1,6 +1,10 @@
 # encoding: utf-8
 class User < ActiveRecord::Base
 
+  default_value_for :level, 0
+  
+  attr_protected :level
+
   has_many :signatures
   has_many :favorites
   has_many :favorite_signatures, :through => :favorites, :source => "signature"
@@ -40,11 +44,11 @@ class User < ActiveRecord::Base
   def random_signature
     case Setting::RANDOM_MODE_NAMES[self.setting.random_mode]
     when :all
-      Signature.all.sample
+      Signature.normal.all.sample
     when :hotest_100
-      Signature.order("up DESC").limit(100).sample
+      Signature.normal.order("up DESC").limit(100).sample
     when :latest_100
-      Signature.order("created_at DESC").limit(100).sample
+      Signature.normal.order("created_at DESC").limit(100).sample
     end
 
   end
@@ -53,6 +57,8 @@ class User < ActiveRecord::Base
     self.icon
   end
 
-
+  def admin?
+    self.level == 1
+  end
 
 end

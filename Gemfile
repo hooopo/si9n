@@ -10,6 +10,8 @@ gem 'memcache-client'
 #gem 'json'
 gem 'thin'
 gem "jquery-rails"
+gem "default_value_for", :git => "https://github.com/FooBarWidget/default_value_for.git"
+
 #gem 'admin_data', :git => "https://github.com/neerajdotname/admin_data.git"
 
 #gem 'devise' # Devise must be required before RailsAdmin

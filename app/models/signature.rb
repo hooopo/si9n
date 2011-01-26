@@ -1,6 +1,10 @@
 # encoding: utf-8
 class Signature < ActiveRecord::Base
 
+  default_values :rank => 0, :up => 0, :status => 1
+
+  attr_protected :rank, :up, :status
+
   belongs_to :user
 
   MAX_BODY_SIZE = 203
@@ -15,10 +19,13 @@ class Signature < ActiveRecord::Base
     :deleted => 0
   }
 
+  scope :normal, where("status =?", STATUS_NAMES[:normal])
+
+
   validates :body, :presence => true, :uniqueness => true, :length => { :maximum => MAX_BODY_SIZE }
 
   def self.random
-    self.all.sample
+    self.normal.all.sample
   end
 
   def up!
@@ -38,5 +45,6 @@ class Signature < ActiveRecord::Base
       self.body + options[:split] + options[:url]
     end
   end
+
   
 end
