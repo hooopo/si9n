@@ -31,6 +31,10 @@ module ApplicationHelper
     end
   end
 
-  
+  def notice_meta_tag
+    if flash[:notice]
+      %(<meta name="notice" content="#{Rack::Utils.escape_html(flash[:notice])}"/>}"/>).html_safe
+    end
+  end
   
 end

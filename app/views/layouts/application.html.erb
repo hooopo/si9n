@@ -11,7 +11,8 @@
     <%= javascript_include_tag "jquery.jgrowl_minimized" %>
 
     <%= csrf_meta_tag %>
-    <meta content="<%= flash[:notice] %>" name="notice">
+    <%= notice_meta_tag %>
+    
     <%= yield(:head) %>
     
   </head>
