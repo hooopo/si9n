@@ -6,5 +6,10 @@ $(function(){
         autoOpen: false,
         width: 430
     });
+
+    var notice = $('meta[name=notice]').attr('content');
+    if (notice != null && notice != "") {
+        $.jGrowl(notice);
+    }
 });
 

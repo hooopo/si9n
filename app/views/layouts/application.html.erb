@@ -11,8 +11,9 @@
     <%= javascript_include_tag "jquery.jgrowl_minimized" %>
 
     <%= csrf_meta_tag %>
+    <meta content="<%= flash[:notice] %>" name="notice">
     <%= yield(:head) %>
-      
+    
   </head>
   <body>
     <div style="margin-bottom: 0pt;" id="header">
@@ -52,7 +53,7 @@
 
       </div>
     </div>
-    <div id="flash_notice" style="display:none"></div>
+    
     <div id="context" >
       <%= yield %>
     </div>

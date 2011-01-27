@@ -1,31 +1,31 @@
 <!DOCTYPE html> 
 <html> 
-	<head> 
-	<title><%= yield(:title).blank? ? "语录网" : yield(:title) %></title>
-	<%= javascript_include_tag "jquery"%>
-	<script src="/javascripts/jqtouch/jqtouch.min.js" type="application/x-javascript" charset="utf-8"></script>
-  <style type="text/css" media="screen">@import "/javascripts/jqtouch/jqtouch.min.css";</style>
-  <style type="text/css" media="screen">@import "/javascripts/jqtouch/themes/jqt/theme.min.css";</style> 
-  <%= javascript_include_tag "mobile" %>
-   
-</head> 
-<body> 
-  	<div id="home">  
-  	  
-        <div class="toolbar"> 
-          <h1>语录网</h1>                                                                              
-          <%= link_to "我的语录", my_signatures_path(:format => "mobile"), :class => "button leftButton" %>
-          <%= link_to "添加", new_signature_path, :class => "button add rightButton" %> 
-    		</div><!-- toolbar -->
+  <head>
+    <title><%= yield(:title).blank? ? "语录网" : yield(:title) %></title>
+    <%= javascript_include_tag "jquery"%>
+    <script src="/javascripts/jqtouch/jqtouch.min.js" type="application/x-javascript" charset="utf-8"></script>
+    <style type="text/css" media="screen">@import "/javascripts/jqtouch/jqtouch.min.css";</style>
+    <style type="text/css" media="screen">@import "/javascripts/jqtouch/themes/jqt/theme.min.css";</style>
+    <%= javascript_include_tag "mobile" %>
+
+  </head>
+  <body>
+    <div id="home">
+
+      <div class="toolbar">
+        <h1>语录网</h1>
+        <%= link_to "我的语录", my_signatures_path(:format => "mobile"), :class => "button leftButton" %>
+        <%= link_to "添加", new_signature_path, :class => "button add rightButton" %>
+      </div><!-- toolbar -->
 
 
-       <ul class="rounded">
-    			<li><a href="/signatures/random.mobile" target="_webapp">随便看看</a></li>
-    			<li><a href="/signatures.mobile" target="_webapp">排行榜</a></li>
-    		</ul>
-  		<%= yield %>
-</div>
+      <ul class="rounded">
+        <li><a href="/signatures/random.mobile" target="_webapp">随便看看</a></li>
+        <li><a href="/signatures.mobile" target="_webapp">排行榜</a></li>
+      </ul>
+      <%= yield %>
+    </div>
 
 
-</body>
+  </body>
 </html>
