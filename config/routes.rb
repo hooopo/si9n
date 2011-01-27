@@ -26,6 +26,10 @@ Si9n::Application.routes.draw do
     match "/settings/edit" => "mine#edit_settings", :via => :put, :as => :edit_my_settings
   end
 
+  namespace :admin do
+    resources :signatures, :only => [:index, :update]
+  end
+
   
 
   # The priority is based upon order of creation: first created -> highest

@@ -7,7 +7,7 @@ gem 'unicorn'
 gem 'nokogiri'
 gem 'yajl-ruby'
 gem 'memcache-client'
-#gem 'json'
+gem 'will_paginate'
 gem 'thin'
 gem "jquery-rails"
 gem "default_value_for", :git => "https://github.com/FooBarWidget/default_value_for.git"
