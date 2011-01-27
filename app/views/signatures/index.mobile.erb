@@ -1,1 +1,5 @@
 <% title "排行榜" %>
+<ul class="rounded">
+<% @signatures.all.each do |s| %>
+  <li class="arrow"><%= s.body %> <smalll class="counter">推荐指数：<%= s.up  %></small></li>
+<% end %>
