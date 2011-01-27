@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title><%= yield(:title).blank? ? "语录网" : yield(:title) %></title> 
+</head> 
+<body> 
+
+  <div data-role="page">
+
+  	<div data-role="header">
+
+    		<ul>
+    			<li><a href="/signatures/random.mobile" class="<%= 'ui-btn-active' if params[:action] == 'random' %>">随便看看</a></li>
+    			<li><a href="/signatures.mobile" class="<%= 'ui-btn-active' if params[:action] == 'index' && params[:controller] == 'signatures' %>">排行榜</a></li>
+    			<li><a href="/mine/signatures.mobile" class="<%= 'ui-btn-active' if params[:controller] == 'mine' %>">我的语录</a></li>
+    		</ul>
+    	<!-- /navbar -->
+    	
+  	</div><!-- /header -->
+
+  	<div data-role="content">	
+  		<%= yield %>		
+  	</div><!-- /content -->
+  	
+  	<%= yield :footer %>
+
+
+  </div><!-- /page -->
+
+
+</body>
+</html>

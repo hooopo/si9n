@@ -3,7 +3,7 @@ class SignaturesController < ApplicationController
 
   before_filter :douban_auth_required, :only => [:syn, :up, :create]
 
-  respond_to :html, :js, :except => [:create, :up]
+  respond_to :html, :js, :mobile, :except => [:create, :up]
 
   def syn
     @signature = Signature.find(params[:id])
@@ -39,7 +39,8 @@ class SignaturesController < ApplicationController
     @signatures = Signature.order("up DESC").limit(10)
     respond_to do |format|
       format.html
-      format.rss { render :layout => false}
+      format.rss { render :layout => false} 
+      format.mobile { render :layout => false } 
     end
   end
 

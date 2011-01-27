@@ -1,0 +1,14 @@
+<% title "随便看看" %>
+
+<div id="signature-body" class="outer_box">
+  <%= render :partial => "signature_body", :locals => {:signature => @signature} %>
+</div>         
+
+
+<%= content_for :footer do %>
+<div data-role="footer" class="ui-bar">
+	<a href="/signatures/random.mobile" data-role="button" data-icon="forward">下一个</a>
+	<a href="index.html" data-role="button" data-icon="star">喜欢</a>
+	<a href="index.html" data-role="button" data-icon="info">同步到广播</a>
+</div>
+<% end %>
