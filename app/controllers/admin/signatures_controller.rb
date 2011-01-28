@@ -1,9 +1,11 @@
 class Admin::SignaturesController < ApplicationController
-
+  
+  before_filter :require_admin
+  
   respond_to :js, :only => [:display, :hide]
 
   def index
-    @signatures = Signature.paginate :per_page => 10, :page => params[:page]
+    @signatures = Signature.order("id DESC").paginate :per_page => 15, :page => params[:page]
   end
 
   def display

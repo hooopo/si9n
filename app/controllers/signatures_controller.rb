@@ -3,6 +3,7 @@ class SignaturesController < ApplicationController
 
   before_filter :douban_auth_required, :only => [:syn, :up, :create]
 
+
   respond_to :html, :js, :mobile, :except => [:create, :up]
 
   def syn

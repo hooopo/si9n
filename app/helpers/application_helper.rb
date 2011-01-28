@@ -33,7 +33,14 @@ module ApplicationHelper
 
   def notice_meta_tag
     if flash[:notice]
-      %(<meta name="notice" content="#{Rack::Utils.escape_html(flash[:notice])}"/>}"/>).html_safe
+      %(<meta name="notice" content="#{Rack::Utils.escape_html(flash[:notice])}" />).html_safe
+    end
+  end
+
+  def require_admin
+    unless current_user && current_user.admin?
+      flash[:notice] = "你没有管理权限"
+      redirect_to root_path
     end
   end
   
