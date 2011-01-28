@@ -27,7 +27,12 @@ Si9n::Application.routes.draw do
   end
 
   namespace :admin do
-    resources :signatures, :only => [:index, :update]
+    resources :signatures, :only => [:index] do
+      member do
+        post :hide
+        post :display
+      end
+    end
   end
 
   
