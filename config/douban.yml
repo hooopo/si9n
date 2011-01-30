@@ -3,6 +3,6 @@ development:
   secret: "29819e878b84ae68"
   url:    "http://localhost:3000"
 production:
-  key:    "your api key from douban"
-  secret: "secret key"
-  url:    "http://yoursite.com"
+  key:    "00da889107e15d13028f99b317a41739"
+  secret: "f6dfc58316620a3f"
+  url:    "http://www.hooopo.com"
