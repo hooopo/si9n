@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110126133848) do
+ActiveRecord::Schema.define(:version => 20110212164449) do
 
   create_table "favorites", :force => true do |t|
     t.integer "user_id"
@@ -24,13 +24,13 @@ ActiveRecord::Schema.define(:version => 20110126133848) do
 
   create_table "signatures", :force => true do |t|
     t.text     "body"
-    t.integer  "rank",       :default => 0
+    t.decimal  "rank",       :precision => 10, :scale => 2, :default => 0.0
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "up",         :default => 0
-    t.integer  "down",       :default => 0
+    t.integer  "up",                                        :default => 0
+    t.integer  "down",                                      :default => 0
     t.integer  "user_id"
-    t.integer  "status",     :default => 1
+    t.integer  "status",                                    :default => 1
   end
 
   create_table "users", :force => true do |t|

@@ -24,6 +24,8 @@ class Signature < ActiveRecord::Base
 
   validates :body, :presence => true, :uniqueness => true, :length => { :maximum => MAX_BODY_SIZE }
 
+  before_save :update_ranking
+
   def self.random
     self.normal.all.sample
   end
@@ -44,6 +46,10 @@ class Signature < ActiveRecord::Base
     else
       self.body + options[:split] + options[:url]
     end
+  end
+
+  def update_ranking
+    self.rank = Utils.ranking(self)
   end
 
   

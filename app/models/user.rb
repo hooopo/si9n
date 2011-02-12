@@ -46,7 +46,7 @@ class User < ActiveRecord::Base
     when :all
       Signature.normal.all.sample
     when :hotest_100
-      Signature.normal.order("up DESC").limit(100).sample
+      Signature.normal.order("rank DESC").limit(100).sample
     when :latest_100
       Signature.normal.order("created_at DESC").limit(100).sample
     end
