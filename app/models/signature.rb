@@ -2,6 +2,9 @@
 class Signature < ActiveRecord::Base
 
   default_values :rank => 0, :up => 0, :status => 1
+  default_value_for :created_at do
+    Time.now
+  end
 
   attr_protected :rank, :up, :status
 
