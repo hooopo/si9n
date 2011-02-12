@@ -12,9 +12,9 @@
 
     <%= csrf_meta_tag %>
     <%= notice_meta_tag %>
-    
+
     <%= yield(:head) %>
-    
+
   </head>
   <body>
     <div style="margin-bottom: 0pt;" id="header">
@@ -54,12 +54,12 @@
 
       </div>
     </div>
-    
+
     <div id="context" >
       <%= yield %>
     </div>
-    <div id="footer">
-
+    <div id="footer" class="wrapper-960">
+      <div class="copyright">(C)2011 www.hooopo.com | 语录推荐平台，保留所有权利。当前版本alpha。</div> 
     </div>
 
     <!-- ui-dialog -->

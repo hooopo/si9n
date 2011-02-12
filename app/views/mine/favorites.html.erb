@@ -2,4 +2,5 @@
 <h1>我搜藏的语录</h1>
 <% if @signatures.present?  %>
   <%= render :partial => "signature", :collection => @signatures, :as => :signature %>
+  <%= will_paginate(@signatures) %>
 <% end %>
