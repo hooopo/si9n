@@ -1,7 +1,5 @@
 <% title "我的搜藏" %>
 <h1>我搜藏的语录</h1>
-<% if @signatures.present?  %>
-  <%= will_paginate(@signatures, :class => "digg_pagination") %>
+<%= paginated_section(@signatures, :class => "digg_pagination") do %>
   <%= render :partial => "signature", :collection => @signatures, :as => :signature %>
-  <%= will_paginate(@signatures, :class => "digg_pagination") %>
 <% end %>
