@@ -22,11 +22,12 @@
         <h1 id="logo"><%= link_to(image_tag("logo.gif"), "/") %></h1>
         <div id="navigation">
           <ul id="menu" class="ui-tabs-nav menu">
-            <%= link_to_with_class "随便看看", signatures_random_path %>
             <%= link_to_with_class "排行榜", signatures_path %>
-            <% if current_user %>
-              <%= link_to_with_class "我的语录", my_signatures_path %>
-            <% end %>
+            <%= link_to_with_class "最新语录", latest_signatures_path %>
+            <%= link_to_with_class "最热语录", hottest_signatures_path %>
+            <%= link_to_with_class "浏览发现", signatures_random_path  %>
+            <%= link_to_with_class "我的语录", my_signatures_path %>
+
           </ul>
         </div>
 
@@ -59,7 +60,7 @@
       <%= yield %>
     </div>
     <div id="footer" class="wrapper-960">
-      <div class="copyright">(C)2011 www.hooopo.com | 语录推荐平台，保留所有权利。当前版本alpha。</div> 
+      <div class="copyright">(C)2011 www.hooopo.com | 语录推荐平台，保留所有权利。当前版本alpha。</div>
     </div>
 
     <!-- ui-dialog -->

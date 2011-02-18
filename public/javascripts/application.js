@@ -2,6 +2,11 @@
 // This file is automatically included by javascript_include_tag :defaults
 
 $(function(){
+    $('a[data-popup]').live('click', function(e) {
+        window.open($(this).attr("href"));
+        e.preventDefault();
+    });
+
     $('#dialog').dialog({
         autoOpen: false,
         width: 430

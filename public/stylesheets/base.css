@@ -240,4 +240,87 @@ div.wrapper-960, .public-container, div#header div.container {
     width: 960px;
     zoom: 1;
 }
+/* 分页 */
+div.pagination {
+    padding: 3px;
+    margin: 3px;
+}
+
+div.pagination a {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #AAAADD;
+
+    text-decoration: none; /* no underline */
+    color: #000099;
+}
+div.pagination a:hover, div.pagination a:active {
+    border: 1px solid #000099;
+
+    color: #000;
+}
+div.pagination span.current {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #000099;
+
+    font-weight: bold;
+    background-color: #000099;
+    color: #FFF;
+}
+div.pagination span.disabled {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #EEE;
+
+    color: #DDD;
+}
+
+.digg_pagination {
+    background: white;
+    margin-bottom:6px;
+/* self-clearing method: */ }
+.digg_pagination a, .digg_pagination span, .digg_pagination em {
+    padding: .2em .5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+.digg_pagination span.disabled {
+    color: #999;
+    border: 1px solid #DDD; }
+.digg_pagination em {
+    font-weight: bold;
+    background: #2E6AB1;
+    color: white;
+    border: 1px solid #2E6AB1; }
+.digg_pagination a {
+    text-decoration: none;
+    color: #105CB6;
+    border: 1px solid #9AAFE5; }
+.digg_pagination a:hover, .digg_pagination a:focus {
+    color: #003;
+    border-color: #003; }
+.digg_pagination .page_info {
+    background: #2E6AB1;
+    color: white;
+    padding: .4em .6em;
+    width: 22em;
+    margin-bottom: .3em;
+    text-align: center; }
+.digg_pagination .page_info b {
+    color: #003;
+    background: #6aa6ed;
+    padding: .1em .25em; }
+.digg_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+* html .digg_pagination {
+    height: 1%; }
+*:first-child+html .digg_pagination {
+    overflow: hidden; }
+
+
 

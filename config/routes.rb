@@ -13,6 +13,10 @@ Si9n::Application.routes.draw do
   
   match "signatures/random" => "signatures#random"
   resources :signatures do
+    collection do
+      get :latest
+      get :hottest
+    end
     member do
       post :up
       post :syn

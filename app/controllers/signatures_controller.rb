@@ -37,10 +37,26 @@ class SignaturesController < ApplicationController
 
 
   def index
-    @signatures = Signature.normal.order("rank DESC").order("id DESC").limit(15)
+    @signatures = Signature.normal.order("rank DESC").order("id DESC").paginate(:per_page => 20, :page => params[:page])
     respond_to do |format|
       format.html
       format.rss { render :layout => false} 
+    end
+  end
+
+  def hottest
+    @signatures = Signature.normal.order("up DESC").order("id DESC").paginate(:per_page => 20, :page => params[:page])
+    respond_to do |format|
+      format.html
+      format.rss { render :layout => false}
+    end
+  end
+
+  def latest
+    @signatures = Signature.normal.order("id DESC").paginate(:per_page => 20, :page => params[:page])
+    respond_to do |format|
+      format.html
+      format.rss { render :layout => false}
     end
   end
 
