@@ -3,12 +3,12 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.3'
 gem 'mysql2'
 gem 'douban'
-gem 'unicorn'
+#gem 'unicorn'
 gem 'nokogiri'
 gem 'yajl-ruby'
 gem 'memcache-client'
 gem 'will_paginate'
-gem 'thin'
+#gem 'thin'
 gem "jquery-rails"
 gem "default_value_for", :git => "https://github.com/FooBarWidget/default_value_for.git"
 
@@ -20,7 +20,7 @@ gem "default_value_for", :git => "https://github.com/FooBarWidget/default_value_
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+#gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # Use unicorn as the web server
 # gem 'unicorn'
