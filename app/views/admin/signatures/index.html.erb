@@ -1,23 +1,23 @@
-<% @signatures.each do |s| %>
-  <div class="outer_box">
-    <div class="block_top">
-      <div class="block_title">
-        <div class="block_titleleft"></div>
-        <div class="block_titlecenter">推荐指数：<%= s.rank  %></div>
-        <div class="block_titleright"></div>
+
+<% paginated_section(@signatures, :class => "digg_pagination") do  %>
+  <% @signatures.each do |s| %>
+    <div class="outer_box">
+      <div class="block_top">
+        <div class="block_title">
+          <div class="block_titleleft"></div>
+          <div class="block_titlecenter">推荐指数：<%= s.rank  %></div>
+          <div class="block_titleright"></div>
+        </div>
+        <div class="block_line"></div>
       </div>
-      <div class="block_line"></div>
+      <div class="body_box">
+        <span class="category_item">
+          <%= s.body %>
+        </span>
+        <span class="operation"><%= build_link(s) %></span>
+      </div>
     </div>
-    <div class="body_box">
-      <span class="category_item">
-        <%= s.body %>
-      </span>
-      <span class="operation"><%= build_link(s) %></span>
-    </div>
-  </div>
+  <% end %>
 <% end %>
-
-
-<%= will_paginate(@signatures) %>
 
 

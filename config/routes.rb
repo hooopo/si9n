@@ -9,7 +9,7 @@ Si9n::Application.routes.draw do
     match '/logout' => 'douban#destroy',    :as => :douban_logout
   end
 
-  root :to => "signatures#random"
+  root :to => "signatures#hottest"
   
   match "signatures/random" => "signatures#random"
   resources :signatures do
