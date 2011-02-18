@@ -3,6 +3,6 @@
   <%= auto_discovery_link_tag(:rss, signatures_path(:format => :rss), :title => "订阅语录排行榜") %>
 <% end %>
 <h2><%=feed_link(:feed => "http://feed.feedsky.com/z063", :title => "语录排行榜")  %> </h2>
-<% paginated_section(@signatures, :class => "digg_pagination") do  %>
+<%= paginated_section(@signatures, :class => "digg_pagination") do  %>
   <%= render :partial => "signatures", :collection => @signatures, :as => :signature %>
 <% end %>
