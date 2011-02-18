@@ -2,9 +2,7 @@
 <% content_for :head do %>
   <%= auto_discovery_link_tag(:rss, latest_signatures_path(:format => :rss), :title => "订阅最新语录") %>
 <% end %>
-<h1>最新发表的语录</h1>
-
-
+<h2><%=feed_link(:feed => "http://feed.feedsky.com/2329", :title => "最新语录")  %> </h2>
 <% paginated_section(@signatures, :class => "digg_pagination") do  %>
   <%= render :partial => "signatures", :collection => @signatures, :as => :signature %>
 <% end %>
