@@ -45,7 +45,8 @@ namespace :deploy do
 
   desc "Symlink shared resources on each release"
   task :symlink_shared, :roles => :app do
-    #run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+    # #run "ln -nfs #{shared_path}/config/database.yml
+    # #{release_path}/config/database.yml"
   end
 end
 
@@ -67,3 +68,10 @@ end
 
 after 'deploy:update_code', 'bundler:symlink_bundled_gems'
 after 'deploy:update_code', 'bundler:install'
+after "deploy:update_code", "deploy:copy_old_sitemap"
+
+namespace :deploy do
+  task :copy_old_sitemap do
+    run "if [ -e #{previous_release}/public/sitemap_index.xml.gz ]; then cp #{previous_release}/public/sitemap* #{current_release}/public/; fi"
+  end
+end

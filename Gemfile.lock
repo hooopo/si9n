@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/FooBarWidget/default_value_for.git
-  revision: e902a8dbc30b69152f319047d0850b851db7163f
+  revision: f98711683f9153d720937327dddf3899b53e9cf5
   specs:
     default_value_for (1.0.1)
 
@@ -87,6 +87,7 @@ GEM
       rake (>= 0.8.7)
       thor (~> 0.14.4)
     rake (0.8.7)
+    sitemap_generator (0.2.5)
     thor (0.14.6)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
@@ -106,5 +107,6 @@ DEPENDENCIES
   mysql2
   nokogiri
   rails (= 3.0.3)
-  will_paginate
+  sitemap_generator (= 0.2.5)
+  will_paginate (= 3.0.pre2)
   yajl-ruby

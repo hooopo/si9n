@@ -1,29 +1,19 @@
 source 'http://rubygems.org'
+#source 'http://gems.github.com'
 
 gem 'rails', '3.0.3'
 gem 'mysql2'
 gem 'douban'
-#gem 'unicorn'
 gem 'nokogiri'
 gem 'yajl-ruby'
 gem 'memcache-client'
-gem 'will_paginate'
-#gem 'thin'
+gem 'will_paginate', "3.0.pre2"
 gem "jquery-rails"
 gem "default_value_for", :git => "https://github.com/FooBarWidget/default_value_for.git"
+gem 'sitemap_generator', "0.2.5"
 
-#gem 'admin_data', :git => "https://github.com/neerajdotname/admin_data.git"
-
-#gem 'devise' # Devise must be required before RailsAdmin
-#gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'sqlite3-ruby', :require => 'sqlite3'
-
-# Use unicorn as the web server
-# gem 'unicorn'
 
 # Deploy with Capistrano
  gem 'capistrano'
