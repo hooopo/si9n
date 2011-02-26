@@ -1,8 +1,8 @@
 xml.instruct! :xml, :version => "1.0"
 xml.rss :version => "2.0" do
   xml.channel do
-    xml.title "最新语录--语录网"
-    xml.description "语录推荐系统-挖掘有意思的签名，段子，冷笑话等"
+    xml.title "最新语录——语录网"
+    xml.description "语录推荐系统-挖掘有意思的签名，段子，冷笑话，语录等"
     xml.link latest_signatures_url
 
     for signature in @signatures
