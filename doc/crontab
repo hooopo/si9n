@@ -1,0 +1,4 @@
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+# m h  dom mon dow   command
+  1 *   *   *    *   rake -s sitemap:refresh -f /var/www/si9n/current/Rakefile RAILS_ENV=production
