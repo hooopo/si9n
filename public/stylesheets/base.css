@@ -323,14 +323,10 @@ div.pagination span.disabled {
     overflow: hidden; }
 /* avatar */
 div.avatar_item {
+    text-align: center;
     float:left;
-    width:70px;
+    width:65px;
     margin-right:8px;
-}
-
-.author_link a{
-    color: #105CB6;
-    text-decoration: none;
 }
 
 .category_item {
@@ -338,6 +334,11 @@ div.avatar_item {
     line-height: 1.3em;
     margin: 5px 0;
     word-wrap: break-word;
+}
+
+.category_item a{
+    color: #105CB6;
+    text-decoration: none;
 }
 
 
