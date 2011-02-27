@@ -37,7 +37,7 @@ class SignaturesController < ApplicationController
 
 
   def index
-    @signatures = Signature.normal.order("rank DESC").order("id DESC").paginate(:per_page => 20, :page => params[:page])
+    @signatures = Signature.normal.order("rank DESC").order("id DESC").includes(:user).paginate(:per_page => 20, :page => params[:page])
     respond_to do |format|
       format.html
       format.rss { render :layout => false} 
@@ -45,7 +45,7 @@ class SignaturesController < ApplicationController
   end
 
   def hottest
-    @signatures = Signature.normal.order("up DESC").order("id DESC").paginate(:per_page => 20, :page => params[:page])
+    @signatures = Signature.normal.order("up DESC").order("id DESC").includes(:user).paginate(:per_page => 20, :page => params[:page])
     respond_to do |format|
       format.html
       format.rss { render :layout => false}
@@ -53,7 +53,7 @@ class SignaturesController < ApplicationController
   end
 
   def latest
-    @signatures = Signature.normal.order("id DESC").paginate(:per_page => 20, :page => params[:page])
+    @signatures = Signature.normal.order("id DESC").includes(:user).paginate(:per_page => 20, :page => params[:page])
     respond_to do |format|
       format.html
       format.rss { render :layout => false}

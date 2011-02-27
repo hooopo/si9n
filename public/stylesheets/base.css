@@ -321,6 +321,23 @@ div.pagination span.disabled {
     height: 1%; }
 *:first-child+html .digg_pagination {
     overflow: hidden; }
+/* avatar */
+div.avatar_item {
+    float:left;
+    width:70px;
+    margin-right:8px;
+}
 
+.author_link a{
+    color: #105CB6;
+    text-decoration: none;
+}
+
+.category_item {
+    font-size: 14px;
+    line-height: 1.3em;
+    margin: 5px 0;
+    word-wrap: break-word;
+}
 
 

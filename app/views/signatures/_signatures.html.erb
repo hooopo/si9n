@@ -9,6 +9,10 @@
     <div class="block_line"></div>
   </div>
   <div class="body_box">
+    <div class="avatar_item">
+      <%= link_to(image_tag(signature.user.avatar_url), signature.user.link, :title => signature.user.title) %>
+      <div class="author_link"><%= link_to signature.user.title, signature.user.link %></div>
+    </div>
     <span class="category_item">
       <%= signature.body %>
     </span>
