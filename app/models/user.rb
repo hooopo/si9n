@@ -13,6 +13,7 @@ class User < ActiveRecord::Base
 
   validates_presence_of :title
   validates_presence_of :uid
+  validates_presence_of :avatar_url
 
   before_create :init_setting
 
@@ -53,10 +54,6 @@ class User < ActiveRecord::Base
 
   end
   
-  def avatar_url
-    self.icon
-  end
-
   def admin?
     self.level == 1
   end

@@ -1,5 +1,6 @@
 # encoding: utf-8
 class Signature < ActiveRecord::Base
+  MAX_BODY_SIZE = 203
 
   default_values :rank => 0, :up => 0, :status => 1
   default_value_for :created_at do
@@ -10,7 +11,9 @@ class Signature < ActiveRecord::Base
 
   belongs_to :user
 
-  MAX_BODY_SIZE = 203
+  validates_presence_of :user
+  validates :body, :presence => true, :uniqueness => true, :length => { :maximum => MAX_BODY_SIZE }
+
   
   STATUS = {
     1 => "正常",
@@ -25,7 +28,6 @@ class Signature < ActiveRecord::Base
   scope :normal, where("status =?", STATUS_NAMES[:normal])
 
 
-  validates :body, :presence => true, :uniqueness => true, :length => { :maximum => MAX_BODY_SIZE }
 
   before_save :update_ranking
 
