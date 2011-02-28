@@ -32,7 +32,7 @@ class User < ActiveRecord::Base
     User.find_or_create_by_uid(info["uid"]["__content__"],
       :content        => info["content"]["__content__"],
       :link           => info["link"].find{|link| link["rel"] == "alternate"}["href"],
-      :icon           => info["link"].find{|link| link["rel"] == "icon"}["href"],
+      :avatar_url     => info["link"].find{|link| link["rel"] == "icon"}["href"],
       :signature      => info["signature"]["__content__"],
       :title          => info["title"]["__content__"]
     )
