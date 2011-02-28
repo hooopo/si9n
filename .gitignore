@@ -20,3 +20,4 @@ capybara-*.html
 config/*.yml
 rerun.txt
 Gemfile.lock
+config/database.yml

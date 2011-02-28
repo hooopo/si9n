@@ -12,12 +12,8 @@ development:
   database: si9n_development
   pool: 5
   username: root
-  password: "123456"
-  # JRuby doesn't support # JRuby doesn't support socket:
-                          #socket:
-  host: 127.0.0.1
-  ## JRuby doesn't support socket:
-   #socket: /var/run/mysqld/mysqld.sock
+  password: 
+  socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -29,12 +25,8 @@ test:
   database: si9n_test
   pool: 5
   username: root
-  password: "123456"
-  # JRuby doesn't support # JRuby doesn't support socket:
-                          #socket:
-  host: 127.0.0.1
-  ## JRuby doesn't support socket:
-   #socket: /var/run/mysqld/mysqld.sock
+  password: 
+  socket: /var/run/mysqld/mysqld.sock
 
 production:
   adapter: mysql2
@@ -43,9 +35,5 @@ production:
   database: si9n_production
   pool: 5
   username: root
-  password: "123456"
-  # JRuby doesn't support # JRuby doesn't support socket:
-                          #socket:
-  host: 127.0.0.1
-  ## JRuby doesn't support socket:
-   #socket: /var/run/mysqld/mysqld.sock
+  password: 
+  socket: /var/run/mysqld/mysqld.sock
