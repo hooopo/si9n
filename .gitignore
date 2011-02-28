@@ -2,6 +2,8 @@ nbproject/*/*
 nbproject/*
 *.rbc
 *.sassc
+*.swo
+*.swp
 .sass-cache
 capybara-*.html
 .rspec
