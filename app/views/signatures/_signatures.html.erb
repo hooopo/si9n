@@ -15,6 +15,8 @@
     <div class="category_item">
       <%= link_to signature.user.title, signature.user.link %> <%= time_ago_in_words(signature.created_at).gsub(/\s+/, "") %>前 说：<br />
       <%= signature.body %>
+      <div />
+      <%= render :partial => "shared/share_to_weibo", :locals => {:signature => signature} %>
     </div>
   </div>
 </div>
