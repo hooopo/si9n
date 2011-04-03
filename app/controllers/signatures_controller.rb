@@ -71,8 +71,8 @@ class SignaturesController < ApplicationController
   end
 
   def show
-    @signature = Signature.find(params[:id])
-    respond_with(@signature)
+    @signatures = Signature.normal.where("id <= ?", params[:id]).order("id DESC").limit(5)
+    respond_with(@signatures)
   end
   
   def new

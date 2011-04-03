@@ -11,7 +11,7 @@ Si9n::Application.routes.draw do
 
   root :to => "signatures#index"
   
-  match "signatures/random" => "signatures#random"
+  
   resources :signatures do
     collection do
       get :latest
@@ -27,7 +27,6 @@ Si9n::Application.routes.draw do
   scope "/mine" do
     match "/favorites"  => "mine#favorites",  :as => :my_favorites
     match "/signatures" => "mine#signatures", :as => :my_signatures
-    match "/settings"   => "mine#settings",   :as => :my_settings
     match "/settings/edit" => "mine#edit_settings", :via => :put, :as => :edit_my_settings
   end
 
