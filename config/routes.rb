@@ -20,6 +20,7 @@ Si9n::Application.routes.draw do
     member do
       post :up
       post :syn
+      post :delay_up
     end
   end
 

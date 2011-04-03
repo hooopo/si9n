@@ -35,6 +35,14 @@ class SignaturesController < ApplicationController
     end
   end
 
+  def delay_up
+    @signature = Signature.find(params[:id])
+    if current_user && !Rails.cache.read(current_user.build_cache_key(@signature))
+      current_user.up(@signature)
+    end
+    render :nothing => true
+  end
+
 
   def index
     @signatures = Signature.normal.order("rank DESC").order("id DESC").includes(:user).paginate(:per_page => 20, :page => params[:page])
