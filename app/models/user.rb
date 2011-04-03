@@ -11,9 +11,9 @@ class User < ActiveRecord::Base
 
   belongs_to :setting
 
-  validates_presence_of :title
-  validates_presence_of :uid
-  validates_presence_of :avatar_url
+  validates :title, :presence => true
+  validates :uid, :presence => true
+  validates :avatar_url, :presence => true
 
   before_create :init_setting
 
@@ -42,17 +42,6 @@ class User < ActiveRecord::Base
     self.setting = Setting.create!
   end
 
-  def random_signature
-    case Setting::RANDOM_MODE_NAMES[self.setting.random_mode]
-    when :all
-      Signature.normal.all.sample
-    when :hotest_100
-      Signature.normal.order("rank DESC").limit(100).sample
-    when :latest_100
-      Signature.normal.order("created_at DESC").limit(100).sample
-    end
-
-  end
   
   def admin?
     self.level == 1

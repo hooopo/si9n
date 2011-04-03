@@ -11,7 +11,7 @@ class Signature < ActiveRecord::Base
 
   belongs_to :user
 
-  validates_presence_of :user
+  validates :user, :presence => true
   validates :body, :presence => true, :uniqueness => true, :length => { :maximum => MAX_BODY_SIZE }
 
   
@@ -31,9 +31,6 @@ class Signature < ActiveRecord::Base
 
   before_save :update_ranking
 
-  def self.random
-    self.normal.all.sample
-  end
 
   def up!
     self.up = self.up + 1

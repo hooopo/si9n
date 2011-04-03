@@ -1,5 +1,0 @@
-$("#signature-body").html("<%= escape_javascript(render :partial => "signature_body", :locals => {:signature => @signature}) %>");
-
-
-$('#up-link').attr('href', "<%= up_signature_path(@signature) %>");
-$('#syn-link').attr('href', "<%= syn_signature_path(@signature) %>");

@@ -3,7 +3,7 @@ class Favorite < ActiveRecord::Base
   belongs_to :user
   belongs_to :signature
 
-  validates_presence_of :user_id
-  validates_presence_of :signature_id
+  validates :user_id, :presence => true
+  validates :signature_id, :presence => true
   validates_uniqueness_of :signature_id, :scope => :user_id
 end
