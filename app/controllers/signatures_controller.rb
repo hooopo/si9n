@@ -14,15 +14,6 @@ class SignaturesController < ApplicationController
     render :js => "$.jGrowl('同步成功！');"
   end
 
-  def random
-    if current_user
-      @signature = current_user.random_signature
-    else
-      @signature = Signature.random
-    end
- 
-    respond_with(@signature)
-  end
 
   def up
     @signature = Signature.find(params[:id])
