@@ -46,7 +46,6 @@ function shareToDouban(url, title){
     var _url = encodeURIComponent(url);
     var _u   = "http://www.douban.com/recommend/?url=" + _url + "&title=" + _t;
     openWindow(_u);
-    delayUp(url);
 }
 
 function shareToRenren(url, title){

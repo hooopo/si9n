@@ -39,8 +39,10 @@ class SignaturesController < ApplicationController
     @signature = Signature.find(params[:id])
     if current_user && !Rails.cache.read(current_user.build_cache_key(@signature))
       current_user.up(@signature)
+      render :text => "OK"
+    else
+      render :nothing => true
     end
-    render :nothing => true
   end
 
 

@@ -4,9 +4,8 @@
         <a title="分享到：人人网" onclick="shareToRenren('<%= signature_url(signature) %>', '<%= truncate(signature.body, :length => 10) %>')" href="javascript:void(0)" class="share_dao renren">
             <img title="分享到：人人网" alt="分享到：人人网"  src="/images/logo/renren-small.png" />
         </a>
-        <a title="分享到：豆瓣" onclick="shareToDouban('<%= signature_url(signature) %>', '<%= truncate(signature.body, :length => 10) %>')"  href="javascript:void(0)"  class="share_dao douban">
-            <img  title="分享到：豆瓣" alt="分享到：豆瓣" src="/images/logo/douban-small.png" />
-        </a>
+        <%= link_to(image_tag('logo/douban-small.png', :title => "分享到豆瓣", :alt => "分享到豆瓣"), syn_signature_path(signature), :remote => true, :method => :post, :id => "syn-link") %>
+  
         <a title="分享到：新浪微博" onclick="postToSinaWeibo('<%= signature_url(signature) %>', '<%= signature.body %>')" href="javascript:void(0)" class="share_dao tsina js-log">
             <img title="分享到：新浪微博" alt="分享到：新浪微薄" src="/images/logo/sina-small.png" />
         </a>
