@@ -10,7 +10,8 @@ class Signature < ActiveRecord::Base
   attr_protected :rank, :up, :status
 
   belongs_to :user
-
+  has_many :comments
+  
   validates :user, :presence => true
   validates :body, :presence => true, :uniqueness => true, :length => { :maximum => MAX_BODY_SIZE }
 

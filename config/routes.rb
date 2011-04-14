@@ -11,6 +11,8 @@ Si9n::Application.routes.draw do
 
   root :to => "signatures#index"
   
+  #评论
+  resources :comments
   
   resources :signatures do
     collection do
@@ -29,7 +31,7 @@ Si9n::Application.routes.draw do
     match "/signatures" => "mine#signatures", :as => :my_signatures
     match "/settings/edit" => "mine#edit_settings", :via => :put, :as => :edit_my_settings
   end
-
+  
   namespace :admin do
     resources :signatures, :only => [:index] do
       member do
@@ -38,7 +40,6 @@ Si9n::Application.routes.draw do
       end
     end
   end
-
   
 
   # The priority is based upon order of creation: first created -> highest

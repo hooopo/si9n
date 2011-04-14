@@ -8,7 +8,8 @@ class User < ActiveRecord::Base
   has_many :signatures
   has_many :favorites
   has_many :favorite_signatures, :through => :favorites, :source => "signature"
-
+  has_many :comments
+  
   belongs_to :setting
 
   validates :title, :presence => true

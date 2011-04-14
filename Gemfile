@@ -12,7 +12,6 @@ gem "jquery-rails"
 gem "default_value_for", :git => "https://github.com/FooBarWidget/default_value_for.git"
 gem 'sitemap_generator', "0.2.5"
 
-
 #gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # Deploy with Capistrano
